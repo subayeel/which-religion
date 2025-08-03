@@ -12,9 +12,10 @@ import React from "react";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Spiritual Doses",
-  description: "A tool to guide you in your Spiritual Journey. ",
-  keywords: "dosesofislam,dosesofimaan,Islam,Imaan,Ihsaan",
+  title: "Which Religion",
+  description: "A tool to guide research on religions. ",
+  keywords:
+    "which religion, which religion is best, which religion is true, which religion is right, which religion is wrong, which religion is good, which religion is bad, which religion is right, which religion is wrong, which religion is good, which religion is bad",
   manifest: "/web.manifest",
 };
 
@@ -63,8 +64,6 @@ export default function RootLayout({
                     className="object-contain"
                   />
                 </Link>
-
-                <div className="w-[28px]"></div>
               </div>
 
               <div className="z-10">{children}</div>

@@ -78,13 +78,6 @@ export default function Home() {
     },
   ];
 
-  const stats = [
-    { label: "Religions Covered", value: "7+", icon: Globe },
-    { label: "Philosophies Explored", value: "25+", icon: Lightbulb },
-    { label: "Comparative Studies", value: "9+", icon: Scale },
-    { label: "Core Concepts", value: "15+", icon: Book },
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -122,39 +115,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="flex justify-center mb-3">
-                  <stat.icon className="h-8 w-8 text-primary" />
-                </div>
-                <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Featured Sections */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Explore Our Comprehensive Guide
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From foundational concepts to detailed comparative studies,
-              discover everything you need to understand world religions and
-              philosophies.
-            </p>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-8">
             {featuredSections.map((section, index) => (
               <Card
