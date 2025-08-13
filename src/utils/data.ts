@@ -516,16 +516,6 @@ export const majorReligions = [
     icon: Leaf, // Changed from Leaf, might want a more specific icon
   },
   {
-    title: "Atheism",
-    url: "/major-religions/atheism",
-    icon: User, // Changed from User, might want a more specific icon
-  },
-  {
-    title: "Agnosticism",
-    url: "/major-religions/agnosticism",
-    icon: MessageCircle, // Changed from MessageCircle, might want a more specific icon
-  },
-  {
     title: "Buddhism",
     url: "/major-religions/buddhism",
     icon: Feather, // Changed from Feather, might want a more specific icon
@@ -759,20 +749,11 @@ export const comparativeStudies = [
     url: "/comparative-studies/comparative-religion-study",
     icon: Scale,
   },
-  {
-    title: "Similarities between Religions",
-    url: "/comparative-studies/similarities",
-    icon: HandHeart,
-  },
+
   {
     title: "Categories of Religion",
     url: "/comparative-studies/categories",
     icon: AlignLeft,
-  },
-  {
-    title: "Finding Correlation and Case Studies",
-    url: "/comparative-studies/correlation-case-studies",
-    icon: ChartNoAxesCombined,
   },
 ];
 

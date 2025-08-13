@@ -24,7 +24,11 @@ import {
 
 import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
-import { comparativeStudies, foundationalConcepts } from "@/utils/data";
+import {
+  comparativeStudies,
+  foundationalConcepts,
+  majorReligions,
+} from "@/utils/data";
 
 const SidebarComponent = () => {
   const [currentPath, setCurrentPath] = useState("");
@@ -138,6 +142,17 @@ const SidebarComponent = () => {
           <SidebarGroupContent>
             <SidebarMenu>
               {comparativeStudies.map((item) => (
+                <MenuItemWithActiveState key={item.title} item={item} />
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Religions</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {majorReligions.map((item) => (
                 <MenuItemWithActiveState key={item.title} item={item} />
               ))}
             </SidebarMenu>
