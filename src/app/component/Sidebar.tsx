@@ -80,8 +80,8 @@ const SidebarComponent = () => {
     <Sidebar>
       <SidebarHeader>
         <SidebarMenu>
-          <SidebarMenuItem className="flex gap-2 items-center">
-            <Link href="/">
+          <SidebarMenuItem className="flex gap-2 items-center justify-between">
+            <Link href="/" className="flex items-center gap-2">
               <Image
                 src="/logo.png" // Assuming you'll have a logo for "Which Religion?"
                 alt="Brand logo"
@@ -89,10 +89,12 @@ const SidebarComponent = () => {
                 height={32}
                 className="object-contain"
               />{" "}
+              <div className="text-core flex flex-col font-semibold text-lg leading-3">
+                <span className="tracking-wide text-lg m-0">
+                  Which Religion?
+                </span>
+              </div>
             </Link>
-            <div className="text-core flex flex-col font-semibold text-lg leading-3">
-              <span className="tracking-wide text-lg m-0">Which Religion?</span>
-            </div>
             <ModeToggle />
           </SidebarMenuItem>
         </SidebarMenu>

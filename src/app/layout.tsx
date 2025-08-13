@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans, GeistMono } from "geist/font";
 import { cn } from "@/lib/utils";
 import "./globals.css";
-import Image from "next/image";
+
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 import { ThemeProvider } from "next-themes";
@@ -10,6 +10,7 @@ import SidebarComponent from "@/app/component/Sidebar";
 import Link from "next/link";
 import React from "react";
 import Script from "next/script";
+import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Which Religion",
@@ -51,20 +52,15 @@ export default function RootLayout({
         <body className="flex flex-col min-h-screen bg-background font-sans antialiased">
           <SidebarProvider defaultOpen={true}>
             <SidebarComponent />
-            {/* <SidebarTrigger className="ml-2 aspect-square hidden md:block" /> */}
             <main className="flex flex-col w-full">
-              <div className="border-b flex justify-between xl:hidden py-2 px-3 sticky top-0 z-[20] bg-white/95 dark:bg-gray-700/95">
-                <SidebarTrigger className="ml-2 aspect-square" />
-                <Link href="/">
-                  <Image
-                    src="/logo.png"
-                    alt="Brand logo"
-                    width={32}
-                    height={32}
-                    className="object-contain"
-                  />
-                </Link>
-              </div>
+              <SidebarTrigger className="ml-2 aspect-square hidden md:block" />
+              {/* <SidebarTrigger className="ml-2 mt-2 aspect-square" /> */}
+              <Link
+                href="/"
+                className="flex justify-between items-center absolute top-3 right-3 z-50"
+              >
+                <Home color="black" size={18} />
+              </Link>
 
               <div className="z-10">{children}</div>
               {/* <div
