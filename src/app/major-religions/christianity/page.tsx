@@ -82,14 +82,6 @@ const geographicalData = [
   { country: "Philippines", followers: 95000000 },
 ];
 
-const denominationData = [
-  { denomination: "Catholicism", disagreement: 15 },
-  { denomination: "Protestantism", disagreement: 25 },
-  { denomination: "Orthodoxy", disagreement: 10 },
-  { denomination: "Anglicanism", disagreement: 20 },
-  { denomination: "Pentecostalism", disagreement: 30 },
-];
-
 function ChristianityPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -215,13 +207,13 @@ function ChristianityPage() {
                       <span className="text-sm text-gray-600 dark:text-gray-400">
                         Logic
                       </span>
-                      <span className="font-semibold text-green-600">85%</span>
+                      <span className="font-semibold text-red-600">0%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600 dark:text-gray-400">
                         Reasoning
                       </span>
-                      <span className="font-semibold text-green-600">80%</span>
+                      <span className="font-semibold text-red-600">0%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600 dark:text-gray-400">
@@ -1111,7 +1103,7 @@ function ChristianityPage() {
                     Christian population growth over time
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pl-12">
                   <ResponsiveContainer width="100%" height={300}>
                     <AreaChart data={historicalSpreadData}>
                       <CartesianGrid strokeDasharray="3 3" />
@@ -1130,27 +1122,6 @@ function ChristianityPage() {
                         fillOpacity={0.6}
                       />
                     </AreaChart>
-                  </ResponsiveContainer>
-                </CardContent>
-              </Card>
-
-              {/* Denomination Disagreement */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Denomination Disagreement Levels</CardTitle>
-                  <CardDescription>
-                    Percentage of disagreement by denomination
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={denominationData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="denomination" />
-                      <YAxis />
-                      <Tooltip />
-                      <Bar dataKey="disagreement" fill="#F59E0B" />
-                    </BarChart>
                   </ResponsiveContainer>
                 </CardContent>
               </Card>

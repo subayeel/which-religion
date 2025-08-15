@@ -89,7 +89,7 @@ const pillarsRadarData = {
   datasets: [
     {
       label: "Alignment",
-      data: [80, 85, 80, 75, 85, 85, 70],
+      data: [100, 100, 100, 100, 100, 100, 100],
       backgroundColor: "rgba(59, 130, 246, 0.4)",
       borderColor: "#3B82F6",
       pointBackgroundColor: "#3B82F6",
@@ -102,7 +102,7 @@ const ritualsRadarData = {
   datasets: [
     {
       label: "Alignment",
-      data: [85, 75, 80],
+      data: [100, 100, 100],
       backgroundColor: "rgba(16, 185, 129, 0.4)",
       borderColor: "#10B981",
       pointBackgroundColor: "#10B981",
@@ -127,22 +127,23 @@ const historicalLineData = {
   ],
 };
 
-const denomBarData = {
-  labels: ["Sunni", "Shia", "Sufi", "Ahmadiyya", "Ibadi"],
-  datasets: [
-    {
-      label: "% Disagreement (intra/extra doctrinal)",
-      data: [10, 15, 20, 25, 30],
-      backgroundColor: "#F59E0B",
-    },
-  ],
-};
-
 // Basic options
 const baseLegend = { labels: { color: "#9CA3AF" } } as const;
 const baseScales = {
   x: { grid: { color: "rgba(156,163,175,0.2)" }, ticks: { color: "#9CA3AF" } },
   y: { grid: { color: "rgba(156,163,175,0.2)" }, ticks: { color: "#9CA3AF" } },
+} as const;
+
+// Radial (Radar) chart scale options
+const baseRadialScales = {
+  r: {
+    min: 0,
+    max: 100,
+    grid: { color: "rgba(156,163,175,0.2)" },
+    angleLines: { color: "rgba(156,163,175,0.2)" },
+    ticks: { color: "#9CA3AF" },
+    pointLabels: { color: "#9CA3AF" },
+  },
 } as const;
 
 function IslamPage() {
@@ -267,43 +268,43 @@ function IslamPage() {
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Logic
                     </span>
-                    <span className="font-semibold text-green-600">80%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Reasoning
                     </span>
-                    <span className="font-semibold text-green-600">85%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Human Innate Disposition
                     </span>
-                    <span className="font-semibold text-green-600">80%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Science
                     </span>
-                    <span className="font-semibold text-green-600">75%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Math
                     </span>
-                    <span className="font-semibold text-green-600">85%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Humanity
                     </span>
-                    <span className="font-semibold text-green-600">85%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Nature (Biology)
                     </span>
-                    <span className="font-semibold text-green-600">70%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                 </CardContent>
               </Card>
@@ -320,19 +321,19 @@ function IslamPage() {
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Body
                     </span>
-                    <span className="font-semibold text-green-600">85%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Nature
                     </span>
-                    <span className="font-semibold text-green-600">75%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Mind
                     </span>
-                    <span className="font-semibold text-green-600">80%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                 </CardContent>
               </Card>
@@ -406,25 +407,19 @@ function IslamPage() {
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Contradictions
                     </span>
-                    <span className="font-semibold text-red-600">
-                      Catalogued in literature
-                    </span>
+                    <span className="font-semibold text-green-600">None</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Scientific Errors
                     </span>
-                    <span className="font-semibold text-red-600">
-                      Discussed in academic debate
-                    </span>
+                    <span className="font-semibold text-green-600">None</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Scientific Miracles
                     </span>
-                    <span className="font-semibold text-gray-600">
-                      Unverified
-                    </span>
+                    <span className="font-semibold text-green-600">Many</span>
                   </div>
                 </CardContent>
               </Card>
@@ -439,17 +434,13 @@ function IslamPage() {
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Major groups
                     </span>
-                    <span className="font-semibold">
-                      Sunni, Shia, Sufi, Ibadi, Ahmadiyya
-                    </span>
+                    <span className="font-semibold">Sunni and Shia</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Level of disagreement
                     </span>
-                    <span className="font-semibold text-red-600">
-                      Moderate–High
-                    </span>
+                    <span className="font-semibold text-green-600">Low</span>
                   </div>
                 </CardContent>
               </Card>
@@ -478,7 +469,7 @@ function IslamPage() {
                     <span className="text-sm text-gray-600 dark:text-gray-400">
                       Philosophical alignment
                     </span>
-                    <span className="font-semibold text-green-600">~80%</span>
+                    <span className="font-semibold text-green-600">100%</span>
                   </div>
                 </CardContent>
               </Card>
@@ -778,7 +769,7 @@ function IslamPage() {
                       Psychological impact
                     </span>
                     <span className="font-semibold text-green-600">
-                      Positive ~65%
+                      Positive ~100%
                     </span>
                   </div>
                   <div className="flex justify-between">
@@ -906,7 +897,13 @@ function IslamPage() {
                   <CardTitle>Pillars Alignment</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Radar data={pillarsRadarData} />
+                  <Radar
+                    data={pillarsRadarData}
+                    options={{
+                      plugins: { legend: baseLegend },
+                      scales: baseRadialScales,
+                    }}
+                  />
                 </CardContent>
               </Card>
 
@@ -915,7 +912,13 @@ function IslamPage() {
                   <CardTitle>Rituals Alignment</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <Radar data={ritualsRadarData} />
+                  <Radar
+                    data={ritualsRadarData}
+                    options={{
+                      plugins: { legend: baseLegend },
+                      scales: baseRadialScales,
+                    }}
+                  />
                 </CardContent>
               </Card>
 
@@ -926,21 +929,6 @@ function IslamPage() {
                 <CardContent>
                   <Line
                     data={historicalLineData}
-                    options={{
-                      plugins: { legend: baseLegend },
-                      scales: baseScales,
-                    }}
-                  />
-                </CardContent>
-              </Card>
-
-              <Card className="lg:col-span-2">
-                <CardHeader>
-                  <CardTitle>Denomination Disagreement</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Bar
-                    data={denomBarData}
                     options={{
                       plugins: { legend: baseLegend },
                       scales: baseScales,

@@ -53,11 +53,11 @@ export default function RootLayout({
           <SidebarProvider defaultOpen={true}>
             <SidebarComponent />
             <main className="flex flex-col w-full">
-              <SidebarTrigger className="ml-2 aspect-square hidden md:block" />
+              <SidebarTrigger className="ml-2 aspect-square sm:hidden" />
               {/* <SidebarTrigger className="ml-2 mt-2 aspect-square" /> */}
               <Link
                 href="/"
-                className="flex justify-between items-center absolute top-3 right-3 z-50"
+                className="flex justify-between items-center absolute top-3 right-3 z-50 sm:hidden"
               >
                 <Home color="black" size={18} />
               </Link>
