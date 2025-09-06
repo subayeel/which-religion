@@ -7,7 +7,15 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { religionComparisonData, comparisonParameters } from "@/utils/data";
-import { X, Plus, Eye, EyeOff, Filter } from "lucide-react";
+import {
+  X,
+  Plus,
+  Eye,
+  EyeOff,
+  Filter,
+  FullscreenIcon,
+  Minimize2,
+} from "lucide-react";
 
 export default function ReligionComparisonPage() {
   const [selectedReligions, setSelectedReligions] = useState<string[]>([]);
@@ -15,6 +23,7 @@ export default function ReligionComparisonPage() {
     comparisonParameters.slice(0, 8).map((p) => p.id) // Show first 8 parameters by default
   );
   const [showParameterFilter, setShowParameterFilter] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Initialize with first two religions for demo
   useEffect(() => {
@@ -43,6 +52,10 @@ export default function ReligionComparisonPage() {
     });
   };
 
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen);
+  };
+
   const selectedReligionData = selectedReligions.map(
     (id) => religionComparisonData.find((r) => r.id === id)!
   );
@@ -56,136 +69,156 @@ export default function ReligionComparisonPage() {
   }, {} as Record<string, typeof comparisonParameters>);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Compare Religions
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Compare up to 4 religions side by side. Select the belief systems
-              you want to analyze and explore their key differences and
-              similarities.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div
+      className={`min-h-screen bg-gray-50 dark:bg-gray-900 ${
+        isFullscreen ? "fixed inset-0 z-50 bg-white dark:bg-gray-900" : ""
+      }`}
+    >
+      <div
+        className={`${
+          isFullscreen
+            ? "h-full overflow-auto"
+            : "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
+        }`}
+      >
         {/* Religion Selection */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Plus className="h-5 w-5" />
-              Select Religions to Compare
-              <Badge variant="secondary">{selectedReligions.length}/4</Badge>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              {religionComparisonData.map((religion) => {
-                const isSelected = selectedReligions.includes(religion.id);
-                const isDisabled = !isSelected && selectedReligions.length >= 4;
-
-                return (
-                  <Button
-                    key={religion.id}
-                    variant={isSelected ? "default" : "outline"}
-                    className={`h-auto p-4 flex flex-col items-center gap-2 ${
-                      isDisabled ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
-                    onClick={() =>
-                      !isDisabled && handleReligionToggle(religion.id)
-                    }
-                    disabled={isDisabled}
-                  >
-                    {React.createElement(religion.icon as any, {
-                      className: "h-6 w-6",
-                    })}
-                    <span className="text-sm font-medium text-center">
-                      {religion.name}
-                    </span>
-                    {isSelected && (
-                      <X className="h-4 w-4 absolute top-1 right-1" />
-                    )}
-                  </Button>
-                );
-              })}
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Parameter Filter */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Filter className="h-5 w-5" />
-                Comparison Parameters
-                <Badge variant="secondary">
-                  {visibleParameters.length}/{comparisonParameters.length}
-                </Badge>
-              </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setShowParameterFilter(!showParameterFilter)}
-              >
-                {showParameterFilter ? (
-                  <EyeOff className="h-4 w-4" />
-                ) : (
-                  <Eye className="h-4 w-4" />
-                )}
-                {showParameterFilter ? "Hide" : "Show"} Filters
-              </Button>
-            </CardTitle>
-          </CardHeader>
-          {showParameterFilter && (
+        {!isFullscreen && (
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Plus className="h-5 w-5" />
+                Select Religions to Compare
+                <Badge variant="secondary">{selectedReligions.length}/4</Badge>
+              </CardTitle>
+            </CardHeader>
             <CardContent>
-              <div className="space-y-6">
-                {Object.entries(groupedParameters).map(([category, params]) => (
-                  <div key={category}>
-                    <h4 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-3">
-                      {category}
-                    </h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {params.map((param) => (
-                        <div
-                          key={param.id}
-                          className="flex items-center space-x-2"
-                        >
-                          <Checkbox
-                            id={param.id}
-                            checked={visibleParameters.includes(param.id)}
-                            onCheckedChange={() =>
-                              handleParameterToggle(param.id)
-                            }
-                          />
-                          <label
-                            htmlFor={param.id}
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          >
-                            {param.label}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                {religionComparisonData.map((religion) => {
+                  const isSelected = selectedReligions.includes(religion.id);
+                  const isDisabled =
+                    !isSelected && selectedReligions.length >= 4;
+
+                  return (
+                    <Button
+                      key={religion.id}
+                      variant={isSelected ? "default" : "outline"}
+                      className={`h-auto p-4 flex items-center gap-2 ${
+                        isDisabled ? "opacity-50 cursor-not-allowed" : ""
+                      }`}
+                      onClick={() =>
+                        !isDisabled && handleReligionToggle(religion.id)
+                      }
+                      disabled={isDisabled}
+                    >
+                      {React.createElement(religion.icon as any, {
+                        className: "h-6 w-6",
+                      })}
+                      <span className="text-sm font-medium text-center">
+                        {religion.name}
+                      </span>
+                      {isSelected && (
+                        <X className="h-4 w-4 absolute top-1 right-1" />
+                      )}
+                    </Button>
+                  );
+                })}
               </div>
             </CardContent>
-          )}
-        </Card>
+          </Card>
+        )}
+
+        {/* Parameter Filter */}
+        {!isFullscreen && (
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Filter className="h-5 w-5" />
+                  Comparison Parameters
+                  <Badge variant="secondary">
+                    {visibleParameters.length}/{comparisonParameters.length}
+                  </Badge>
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowParameterFilter(!showParameterFilter)}
+                >
+                  {showParameterFilter ? (
+                    <EyeOff className="h-4 w-4" />
+                  ) : (
+                    <Eye className="h-4 w-4" />
+                  )}
+                  {showParameterFilter ? "Hide" : "Show"} Filters
+                </Button>
+              </CardTitle>
+            </CardHeader>
+            {showParameterFilter && (
+              <CardContent>
+                <div className="space-y-6">
+                  {Object.entries(groupedParameters).map(
+                    ([category, params]) => (
+                      <div key={category}>
+                        <h4 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-3">
+                          {category}
+                        </h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                          {params.map((param) => (
+                            <div
+                              key={param.id}
+                              className="flex items-center space-x-2"
+                            >
+                              <Checkbox
+                                id={param.id}
+                                checked={visibleParameters.includes(param.id)}
+                                onCheckedChange={() =>
+                                  handleParameterToggle(param.id)
+                                }
+                              />
+                              <label
+                                htmlFor={param.id}
+                                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                              >
+                                {param.label}
+                              </label>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+              </CardContent>
+            )}
+          </Card>
+        )}
 
         {/* Comparison Table */}
         {selectedReligions.length > 0 && (
-          <Card className="overflow-x-auto">
-            <CardHeader>
+          <Card
+            className={`overflow-x-auto ${
+              isFullscreen ? "h-full flex flex-col" : ""
+            }`}
+          >
+            <div className="flex w-full justify-between items-center p-6">
               <CardTitle>Comparison Results</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
+              <Button variant="outline" onClick={toggleFullscreen}>
+                {isFullscreen ? (
+                  <>
+                    <Minimize2 className="h-4 w-4 mr-2" />
+                    Exit Full Screen
+                  </>
+                ) : (
+                  <>
+                    <FullscreenIcon className="h-4 w-4 mr-2" />
+                    Full Screen
+                  </>
+                )}
+              </Button>
+            </div>
+            <CardContent
+              className={`p-0 ${isFullscreen ? "flex-1 overflow-auto" : ""}`}
+            >
               <div className="min-w-full">
                 <table className="w-full">
                   {/* Header with religion names */}
@@ -253,7 +286,7 @@ export default function ReligionComparisonPage() {
           </Card>
         )}
 
-        {selectedReligions.length === 0 && (
+        {selectedReligions.length === 0 && !isFullscreen && (
           <Card>
             <CardContent className="text-center py-12">
               <div className="text-gray-500 dark:text-gray-400">

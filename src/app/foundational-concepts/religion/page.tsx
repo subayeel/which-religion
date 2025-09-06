@@ -20,8 +20,6 @@ const linkText = (text: string): React.ReactNode => {
   const religionNames = [
     "Islam",
     "Christianity",
-    "Hinduism",
-    "Buddhism",
     "Judaism",
     "Atheism",
     "Agnosticism",

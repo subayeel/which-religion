@@ -203,7 +203,7 @@ function Page() {
             <span className="text-2xl mr-4 mt-1">📊</span>
             <div>
               <h3 className="font-semibold text-lg mb-2 text-gray-900 dark:text-gray-100">
-                Size Matters
+                Size
               </h3>
               <p className="leading-relaxed">
                 Christianity and Islam are the largest religions, each with over

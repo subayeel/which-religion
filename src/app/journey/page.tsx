@@ -799,11 +799,11 @@ export default function JourneyPage() {
               </aside>
 
               <p className="mb-8">
-                The so-called leaders — presidents, prime ministers, ministers —
+                The so-called leaders, presidents, prime ministers, ministers,
                 are pawns in a much larger game. Many of them may not even
                 understand who the real players are. But one truth is certain:
                 illusions don't last forever. When they fall, the truth will
-                come out — revealing who were the architects of chaos and who
+                come out, revealing who were the architects of chaos and who
                 were the peacemakers.
               </p>
 
@@ -820,7 +820,7 @@ export default function JourneyPage() {
 
               <p className="mb-8">
                 To answer this, we must go back and examine how the New World
-                Order took root — piece by piece — between the 17th and 21st
+                Order took root, piece by piece, between the 17th and 21st
                 centuries.
               </p>
             </section>
@@ -940,30 +940,8 @@ export default function JourneyPage() {
 
             <section aria-labelledby="next-steps">
               <h2 id="next-steps" className="text-3xl font-bold mt-12 mb-6">
-                Next Steps
+                To be continued...
               </h2>
-              <p className="mb-8">
-                Now the next steps should specifically for you to take, it
-                should be personalized because this problem has to be solved
-                collectively. The dos and donts for you will be based on your
-                Gender, Age, Marital Status, Religion, Financial Status, and
-                Profession.
-              </p>
-
-              <aside
-                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
-                role="note"
-              >
-                <p className="font-semibold mb-2">
-                  Tool:{" "}
-                  <Link
-                    href="/spiritual-journey"
-                    className="text-primary hover:underline"
-                  >
-                    Spiritual Journey
-                  </Link>
-                </p>
-              </aside>
             </section>
           </div>
         </div>

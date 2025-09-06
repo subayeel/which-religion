@@ -22,6 +22,7 @@ import {
   Globe,
   AlignLeft,
   Cloud,
+  Star,
 } from "lucide-react";
 export const philosophies = [
   {
@@ -508,22 +509,13 @@ export const majorReligions = [
   {
     title: "Christianity",
     url: "/major-religions/christianity",
-    icon: HandHeart, // Changed from HandHeart, might want a more specific icon
+    icon: HandHeart,
   },
-  {
-    title: "Hinduism",
-    url: "/major-religions/hinduism",
-    icon: Leaf, // Changed from Leaf, might want a more specific icon
-  },
-  {
-    title: "Buddhism",
-    url: "/major-religions/buddhism",
-    icon: Feather, // Changed from Feather, might want a more specific icon
-  },
+
   {
     title: "Judaism",
     url: "/major-religions/judaism",
-    icon: ShieldCheck, // Changed from ShieldCheck, might want a more specific icon
+    icon: Star,
   },
 ];
 
