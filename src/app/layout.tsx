@@ -7,10 +7,9 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 import { ThemeProvider } from "next-themes";
 import SidebarComponent from "@/app/component/Sidebar";
-import Link from "next/link";
+
 import React from "react";
 import Script from "next/script";
-import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Which Religion",
@@ -53,15 +52,9 @@ export default function RootLayout({
           <SidebarProvider defaultOpen={true}>
             <SidebarComponent />
             <main className="flex flex-col w-full">
-              <SidebarTrigger className="ml-2 aspect-square sm:hidden" />
-              {/* <SidebarTrigger className="ml-2 mt-2 aspect-square" /> */}
-              <Link
-                href="/"
-                className="flex justify-between items-center absolute top-3 right-3 z-50 sm:hidden"
-              >
-                <Home color="black" size={18} />
-              </Link>
-
+              <div className="fixed bottom-3 right-3 z-50 bg-black rounded-full p-4 shadow-md border sm:hidden">
+                <SidebarTrigger className="aspect-square text-white" />
+              </div>
               <div className="z-10">{children}</div>
               {/* <div
                 id="google_translate_element"
