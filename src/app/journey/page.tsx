@@ -1,82 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  Book,
-  Globe,
-  Lightbulb,
-  Scale,
-  ArrowRight,
-  ChevronDown,
-} from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function JourneyPage() {
-  const featuredSections = [
-    {
-      title: "Foundational Concepts",
-      description:
-        "Understanding the basics of religion, philosophy, and belief systems",
-      icon: Book,
-      href: "/foundational-concepts",
-      color: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
-      items: ["Religion", "Philosophical Terms"],
-    },
-    {
-      title: "Major Religions",
-      description:
-        "Explore the world's major religious traditions and their core teachings",
-      icon: Globe,
-      href: "/major-religions",
-      color: "bg-green-500/10 text-green-600 dark:text-green-400",
-      items: [
-        "Islam",
-        "Christianity",
-        "Hinduism",
-        "Buddhism",
-        "Judaism",
-        "Atheism",
-        "Agnosticism",
-      ],
-    },
-    {
-      title: "Philosophies",
-      description:
-        "Dive into philosophical systems that shape human thought and behavior",
-      icon: Lightbulb,
-      href: "/philosophies",
-      color: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
-      items: [
-        "Existentialism",
-        "Stoicism",
-        "Nihilism",
-        "Marxism",
-        "Taoism",
-        "And more...",
-      ],
-    },
-    {
-      title: "Comparative Studies",
-      description:
-        "Analyze similarities, differences, and patterns across belief systems",
-      icon: Scale,
-      href: "/comparative-studies",
-      color: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
-      items: [
-        "Comparative Religion",
-        "Similarities",
-        "Case Studies",
-        "Demographics",
-      ],
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-background" role="main">
       {/* Article Header */}
@@ -946,55 +872,6 @@ export default function JourneyPage() {
           </div>
         </div>
       </article>
-
-      {/* Featured Sections */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Continue Your Journey
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {featuredSections.map((section, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-lg transition-all duration-300"
-              >
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className={`p-2 rounded-lg ${section.color}`}>
-                      <section.icon className="h-6 w-6" />
-                    </div>
-                    <CardTitle className="text-xl">{section.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-base">
-                    {section.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex flex-wrap gap-2">
-                      {section.items.map((item, itemIndex) => (
-                        <span
-                          key={itemIndex}
-                          className="px-3 py-1 bg-muted rounded-full text-sm"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                    <Button className="w-full mt-4" variant="outline" asChild>
-                      <Link href={section.href}>
-                        Explore {section.title}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

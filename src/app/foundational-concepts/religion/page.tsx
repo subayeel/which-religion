@@ -17,13 +17,7 @@ interface TextMatch {
 
 // Unified function to create links for both religions and philosophical terms
 const linkText = (text: string): React.ReactNode => {
-  const religionNames = [
-    "Islam",
-    "Christianity",
-    "Judaism",
-    "Atheism",
-    "Agnosticism",
-  ];
+  const religionNames = ["Islam", "Christianity", "Judaism"];
   const philosophicalTerms_local = philosophicalTerms.map((t) => t.term);
 
   // Find all matches for religions and philosophical terms
@@ -91,7 +85,7 @@ const linkText = (text: string): React.ReactNode => {
     // Add the linked text
     const className =
       match.type === "religion"
-        ? "text-blue-600 hover:text-blue-800 underline font-medium"
+        ? "text-teal-600 hover:text-teal-800 underline font-medium"
         : "text-purple-600 hover:text-purple-800 underline font-medium";
 
     result.push(
@@ -124,10 +118,10 @@ interface TimelinePeriod {
 
 function TimelineCard({ period }: { period: TimelinePeriod }) {
   return (
-    <Card className="mb-4 border-l-4 border-l-blue-500">
+    <Card className="mb-4 border-l-4 border-l-teal-500">
       <CardHeader className="pb-2">
         <div className="flex items-center gap-2">
-          <Clock className="h-4 w-4 text-blue-500" />
+          <Clock className="h-4 w-4 text-teal-500" />
           <CardTitle className="text-sm font-bold">{period.period}</CardTitle>
         </div>
         <Badge variant="outline" className="w-fit text-xs">
@@ -139,7 +133,7 @@ function TimelineCard({ period }: { period: TimelinePeriod }) {
         <ul className="text-xs space-y-1">
           {period.events.map((event: string, index: number) => (
             <li key={index} className="flex items-start gap-1">
-              <span className="text-blue-500 mt-1">•</span>
+              <span className="text-teal-500 mt-1">•</span>
               <span>{event}</span>
             </li>
           ))}
@@ -157,7 +151,7 @@ function Page() {
         <div className="lg:w-2/3">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-3xl font-bold text-gray-900 mb-4">
               Comparative Study of World Religions
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -287,7 +281,7 @@ function Page() {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 <Link
                   href="/major-religions/islam"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-teal-600 hover:text-teal-800 underline"
                 >
                   Islam
                 </Link>
@@ -334,7 +328,7 @@ function Page() {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 <Link
                   href="/major-religions/christianity"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-teal-600 hover:text-teal-800 underline"
                 >
                   Christianity
                 </Link>
@@ -373,12 +367,7 @@ function Page() {
             {/* Hinduism */}
             <div className="mb-10">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                <Link
-                  href="/major-religions/hinduism"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Hinduism
-                </Link>
+                <p>Hinduism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -410,12 +399,7 @@ function Page() {
             {/* Buddhism */}
             <div className="mb-10">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                <Link
-                  href="/major-religions/buddhism"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Buddhism
-                </Link>
+                <p>Buddhism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -449,7 +433,7 @@ function Page() {
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 <Link
                   href="/major-religions/judaism"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-teal-600 hover:text-teal-800 underline"
                 >
                   Judaism
                 </Link>
@@ -486,19 +470,7 @@ function Page() {
             {/* Atheism and Agnosticism */}
             <div className="mb-10">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                <Link
-                  href="/major-religions/atheism"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Atheism
-                </Link>{" "}
-                and{" "}
-                <Link
-                  href="/major-religions/agnosticism"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Agnosticism
-                </Link>
+                <p>Atheism</p> and <p>Agnosticism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed text-gray-700 mb-4">
@@ -571,7 +543,7 @@ function Page() {
             <Card className="mb-6">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-blue-600" />
+                  <Clock className="h-5 w-5 text-teal-600" />
                   Religion Timeline
                 </CardTitle>
               </CardHeader>
