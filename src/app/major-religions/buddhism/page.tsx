@@ -24,7 +24,6 @@ import {
   LineElement,
   RadialLinearScale,
 } from "chart.js";
-import { Pie, Bar, Radar, Line } from "react-chartjs-2";
 
 ChartJS.register(
   ArcElement,
@@ -47,85 +46,6 @@ const totals = {
   birthPct: 1.8,
   totalCount: 0.52,
 };
-
-const populationPieData = {
-  labels: ["Practicing", "Non-Practicing", "Others"],
-  datasets: [
-    {
-      data: [totals.practicingPct, totals.nonPracticingPct, totals.othersPct],
-      backgroundColor: ["#10B981", "#6B7280", "#EF4444"],
-      borderWidth: 0,
-    },
-  ],
-};
-const institutionsBarData = {
-  labels: ["Places of Worship", "Charity", "Educational"],
-  datasets: [
-    {
-      label: "Count",
-      data: [500000, 60000, 50000],
-      backgroundColor: "#3B82F6",
-    },
-  ],
-};
-const pillarsRadarData = {
-  labels: [
-    "Logic",
-    "Reasoning",
-    "Human Innate Disposition",
-    "Science",
-    "Math",
-    "Humanity",
-    "Nature (Biology)",
-  ],
-  datasets: [
-    {
-      label: "Alignment",
-      data: [85, 85, 90, 70, 70, 90, 80],
-      backgroundColor: "rgba(59,130,246,0.4)",
-      borderColor: "#3B82F6",
-      pointBackgroundColor: "#3B82F6",
-    },
-  ],
-};
-const ritualsRadarData = {
-  labels: ["Body", "Nature", "Mind"],
-  datasets: [
-    {
-      label: "Alignment",
-      data: [75, 70, 90],
-      backgroundColor: "rgba(16,185,129,0.4)",
-      borderColor: "#10B981",
-      pointBackgroundColor: "#10B981",
-    },
-  ],
-};
-const historicalLineData = {
-  labels: ["-500", "0", "500", "1000", "1500", "1900", "2024"],
-  datasets: [
-    {
-      label: "Adherents (approx)",
-      data: [
-        1000000, 5000000, 20000000, 30000000, 80000000, 150000000, 520000000,
-      ],
-      borderColor: "#3B82F6",
-      backgroundColor: "rgba(59,130,246,0.3)",
-      tension: 0.3,
-    },
-  ],
-};
-const denomBarData = {
-  labels: ["Theravada", "Mahayana", "Vajrayana"],
-  datasets: [
-    { label: "% Disagreement", data: [20, 20, 25], backgroundColor: "#F59E0B" },
-  ],
-};
-
-const baseLegend = { labels: { color: "#9CA3AF" } } as const;
-const baseScales = {
-  x: { grid: { color: "rgba(156,163,175,0.2)" }, ticks: { color: "#9CA3AF" } },
-  y: { grid: { color: "rgba(156,163,175,0.2)" }, ticks: { color: "#9CA3AF" } },
-} as const;
 
 export default function BuddhismPage() {
   return (
@@ -495,31 +415,7 @@ export default function BuddhismPage() {
                   </div>
                 </CardContent>
               </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Influences</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Upanishadic thought
-                    </span>
-                    <span className="font-semibold text-green-600">High</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Sramana movements
-                    </span>
-                    <span className="font-semibold text-green-600">High</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Regional cultures
-                    </span>
-                    <span className="font-semibold text-green-600">High</span>
-                  </div>
-                </CardContent>
-              </Card>
+
               <Card>
                 <CardHeader>
                   <CardTitle>Major Historical Events</CardTitle>
@@ -540,37 +436,6 @@ export default function BuddhismPage() {
                   <div>
                     <span className="font-medium">19th–20th c.:</span> Global
                     transmission
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Historical Accuracy & Impact</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Archaeology alignment
-                    </span>
-                    <span className="font-semibold text-green-600">~70%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Historical alignment
-                    </span>
-                    <span className="font-semibold text-green-600">~75%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Positive contributions
-                    </span>
-                    <span className="font-semibold text-green-600">~80%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Negative conflicts
-                    </span>
-                    <span className="font-semibold text-red-600">~20%</span>
                   </div>
                 </CardContent>
               </Card>
@@ -639,183 +504,6 @@ export default function BuddhismPage() {
                     </span>
                     <span className="font-semibold">~15M</span>
                   </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Patterns</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Urban vs Rural
-                    </span>
-                    <span className="font-semibold text-green-600">
-                      ~60% Urban
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Homeland vs Diaspora
-                    </span>
-                    <span className="font-semibold text-green-600">
-                      ~5% Diaspora
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Geopolitical Influence
-                    </span>
-                    <span className="font-semibold text-green-600">Medium</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Climatic Adaptation
-                    </span>
-                    <span className="font-semibold text-green-600">High</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="empirical" className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Scientific Testability</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Claims tested
-                    </span>
-                    <span className="font-semibold">80+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      % confirmed
-                    </span>
-                    <span className="font-semibold text-green-600">~20%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      % unverified
-                    </span>
-                    <span className="font-semibold text-gray-600">~65%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      % refuted
-                    </span>
-                    <span className="font-semibold text-red-600">~15%</span>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Correlation with Science</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Overall correlation
-                    </span>
-                    <span className="font-semibold text-green-600">~70%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Life satisfaction
-                    </span>
-                    <span className="font-semibold text-green-600">~72%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Psychological impact
-                    </span>
-                    <span className="font-semibold text-green-600">
-                      Positive ~65%
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
-                      Longevity
-                    </span>
-                    <span className="font-semibold text-green-600">
-                      ~+1.5 years
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="graphs" className="space-y-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Population Pie</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Pie data={populationPieData} />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Institutions</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Bar
-                    data={institutionsBarData}
-                    options={{
-                      plugins: { legend: baseLegend },
-                      scales: baseScales,
-                    }}
-                  />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Pillars Alignment</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Radar data={pillarsRadarData} />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Rituals Alignment</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Radar data={ritualsRadarData} />
-                </CardContent>
-              </Card>
-              <Card className="lg:col-span-2">
-                <CardHeader>
-                  <CardTitle>Historical Spread Timeline</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Line
-                    data={historicalLineData}
-                    options={{
-                      plugins: { legend: baseLegend },
-                      scales: baseScales,
-                    }}
-                  />
-                </CardContent>
-              </Card>
-              <Card className="lg:col-span-2">
-                <CardHeader>
-                  <CardTitle>Denomination Disagreement</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Bar
-                    data={denomBarData}
-                    options={{
-                      plugins: { legend: baseLegend },
-                      scales: baseScales,
-                    }}
-                  />
                 </CardContent>
               </Card>
             </div>

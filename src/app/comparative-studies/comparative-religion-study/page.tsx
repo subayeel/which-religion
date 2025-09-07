@@ -9,7 +9,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { religionComparisonData, comparisonParameters } from "@/utils/data";
 import {
   X,
-  Plus,
   Eye,
   EyeOff,
   Filter,
@@ -20,14 +19,14 @@ import {
 export default function ReligionComparisonPage() {
   const [selectedReligions, setSelectedReligions] = useState<string[]>([]);
   const [visibleParameters, setVisibleParameters] = useState<string[]>(
-    comparisonParameters.slice(0, 8).map((p) => p.id) // Show first 8 parameters by default
+    comparisonParameters.map((p) => p.id) // Show all parameters by default
   );
   const [showParameterFilter, setShowParameterFilter] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Initialize with first two religions for demo
   useEffect(() => {
-    setSelectedReligions(["islam", "christianity"]);
+    setSelectedReligions(["islam", "christianity", "judaism", "atheism"]);
   }, []);
 
   const handleReligionToggle = (religionId: string) => {
@@ -86,7 +85,6 @@ export default function ReligionComparisonPage() {
           <Card className="mb-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Plus className="h-5 w-5" />
                 Select Religions to Compare
                 <Badge variant="secondary">{selectedReligions.length}/4</Badge>
               </CardTitle>
@@ -133,7 +131,6 @@ export default function ReligionComparisonPage() {
             <CardHeader>
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Filter className="h-5 w-5" />
                   Comparison Parameters
                   <Badge variant="secondary">
                     {visibleParameters.length}/{comparisonParameters.length}
@@ -232,9 +229,9 @@ export default function ReligionComparisonPage() {
                           key={religion.id}
                           className="text-center p-4 min-w-[280px] border-l"
                         >
-                          <div className="flex flex-col items-center gap-2">
+                          <div className="flex items-center gap-2">
                             {React.createElement(religion.icon as any, {
-                              className: "h-8 w-8 text-blue-600",
+                              className: "h-4 w-4 text-primary",
                             })}
                             <span className="font-semibold text-gray-900 dark:text-white">
                               {religion.name}

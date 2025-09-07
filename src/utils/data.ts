@@ -862,69 +862,69 @@ export const religionComparisonData: ReligionComparisonData[] = [
         "Large base (2.3B); moderate growth (fertility ≈2.7 in Christian-majority regions vs global); conversions (active missionary traditions, but also secular switching away)",
     },
   },
-  {
-    id: "hinduism",
-    name: "Hinduism",
-    icon: Leaf,
-    parameters: {
-      beliefInGod:
-        "Polytheistic/henotheistic (many gods; one ultimate Brahman)",
-      majorDeities: "Brahmā, Viṣṇu, Śiva, etc. (and their consorts)",
-      founder: "No single founder (evolved from Vedic tradition)",
-      timeOfOrigin: "Vedic roots ca. 1500–500 BCE",
-      sacredTexts: "Vedas, Upanishads, Bhagavad Gita, Purāṇas, etc.",
-      scriptureAuthenticity:
-        "Vedas orally transmitted (considered śruti); many recensions of other texts",
-      numberOfFollowers: "≈1.2 billion (14.9%)",
-      majorBranches:
-        "Vaishnavism, Shaivism, Shaktism, Smartism (loosely defined); caste-based sects",
-      coreDoctrines:
-        "Dharma (duty), karma (action), samsara (rebirth), moksha (liberation); law of karma; realization of Brahman",
-      myths:
-        "Vedic cosmogony; epics Ramayana (Rama) and Mahabharata (Krishna, Bhagavad Gita); Puranic myths of gods",
-      ethicalTeachings:
-        "Non-violence (ahiṃsā); truth; duty by caste/life stage; hospitality; respect for elders",
-      rituals:
-        "Daily puja (worship rituals); temple ceremonies; yajña (fire rituals); major festivals (Diwali, Holi, Navaratri); rites of passage (samskaras)",
-      socialInstitutions:
-        "Temple complexes; Brahmin priesthood; guru-śishya (teacher-disciple) lineages; caste councils (traditionally)",
-      innerExperience:
-        "Yoga, meditation, darśana (philosophical insight), bhakti (devotion as inner love)",
-      growthDynamics:
-        "High birthrates in South Asia (fertility ≈2.3–2.5); very low conversion (ethnicity-based faith)",
-    },
-  },
-  {
-    id: "buddhism",
-    name: "Buddhism",
-    icon: Feather,
-    parameters: {
-      beliefInGod: "Non-theistic (no creator God)",
-      majorDeities: "–",
-      founder: "Siddhartha Gautama (c. 6th c. BCE)",
-      timeOfOrigin: "ca. 6th century BCE",
-      sacredTexts: "Pāli Canon (Tipiṭaka), Mahāyāna sūtras",
-      scriptureAuthenticity:
-        "Ancient texts preserved in Pāli/Tibetan/Chinese versions; historical authenticity debated in places",
-      numberOfFollowers: "≈500–520 million (6%)",
-      majorBranches:
-        "Theravāda, Mahāyāna (Zen, Pure Land, etc.), Vajrayāna (Tibetan)",
-      coreDoctrines:
-        "Four Noble Truths (suffering & cessation); Eightfold Path; no-self (anatta); karma and rebirth",
-      myths:
-        "Life of the Buddha (birth, enlightenment, parables); Jātaka tales; various Buddhas and bodhisattvas in Mahāyāna",
-      ethicalTeachings:
-        "Compassion; non-harm; mindfulness; ethical precepts (e.g. five precepts)",
-      rituals:
-        "Meditation and chant; temple worship; offerings; festivals like Vesak (Buddha's birth); monastic ordination ceremonies",
-      socialInstitutions:
-        "Monasteries and sangha; meditation centers; bodhisattva orders (e.g. Dalai Lama as figurehead)",
-      innerExperience:
-        "Mindfulness/meditation (vipassanā, zazen); koans (Zen); mystical insight (Sunyata in Mahāyāna)",
-      growthDynamics:
-        "Low birthrates (≈1.6 globally); little net growth (some decline); few converts outside Asia (some Western interest but offset by aging populations)",
-    },
-  },
+  // {
+  //   id: "hinduism",
+  //   name: "Hinduism",
+  //   icon: Leaf,
+  //   parameters: {
+  //     beliefInGod:
+  //       "Polytheistic/henotheistic (many gods; one ultimate Brahman)",
+  //     majorDeities: "Brahmā, Viṣṇu, Śiva, etc. (and their consorts)",
+  //     founder: "No single founder (evolved from Vedic tradition)",
+  //     timeOfOrigin: "Vedic roots ca. 1500–500 BCE",
+  //     sacredTexts: "Vedas, Upanishads, Bhagavad Gita, Purāṇas, etc.",
+  //     scriptureAuthenticity:
+  //       "Vedas orally transmitted (considered śruti); many recensions of other texts",
+  //     numberOfFollowers: "≈1.2 billion (14.9%)",
+  //     majorBranches:
+  //       "Vaishnavism, Shaivism, Shaktism, Smartism (loosely defined); caste-based sects",
+  //     coreDoctrines:
+  //       "Dharma (duty), karma (action), samsara (rebirth), moksha (liberation); law of karma; realization of Brahman",
+  //     myths:
+  //       "Vedic cosmogony; epics Ramayana (Rama) and Mahabharata (Krishna, Bhagavad Gita); Puranic myths of gods",
+  //     ethicalTeachings:
+  //       "Non-violence (ahiṃsā); truth; duty by caste/life stage; hospitality; respect for elders",
+  //     rituals:
+  //       "Daily puja (worship rituals); temple ceremonies; yajña (fire rituals); major festivals (Diwali, Holi, Navaratri); rites of passage (samskaras)",
+  //     socialInstitutions:
+  //       "Temple complexes; Brahmin priesthood; guru-śishya (teacher-disciple) lineages; caste councils (traditionally)",
+  //     innerExperience:
+  //       "Yoga, meditation, darśana (philosophical insight), bhakti (devotion as inner love)",
+  //     growthDynamics:
+  //       "High birthrates in South Asia (fertility ≈2.3–2.5); very low conversion (ethnicity-based faith)",
+  //   },
+  // },
+  // {
+  //   id: "buddhism",
+  //   name: "Buddhism",
+  //   icon: Feather,
+  //   parameters: {
+  //     beliefInGod: "Non-theistic (no creator God)",
+  //     majorDeities: "–",
+  //     founder: "Siddhartha Gautama (c. 6th c. BCE)",
+  //     timeOfOrigin: "ca. 6th century BCE",
+  //     sacredTexts: "Pāli Canon (Tipiṭaka), Mahāyāna sūtras",
+  //     scriptureAuthenticity:
+  //       "Ancient texts preserved in Pāli/Tibetan/Chinese versions; historical authenticity debated in places",
+  //     numberOfFollowers: "≈500–520 million (6%)",
+  //     majorBranches:
+  //       "Theravāda, Mahāyāna (Zen, Pure Land, etc.), Vajrayāna (Tibetan)",
+  //     coreDoctrines:
+  //       "Four Noble Truths (suffering & cessation); Eightfold Path; no-self (anatta); karma and rebirth",
+  //     myths:
+  //       "Life of the Buddha (birth, enlightenment, parables); Jātaka tales; various Buddhas and bodhisattvas in Mahāyāna",
+  //     ethicalTeachings:
+  //       "Compassion; non-harm; mindfulness; ethical precepts (e.g. five precepts)",
+  //     rituals:
+  //       "Meditation and chant; temple worship; offerings; festivals like Vesak (Buddha's birth); monastic ordination ceremonies",
+  //     socialInstitutions:
+  //       "Monasteries and sangha; meditation centers; bodhisattva orders (e.g. Dalai Lama as figurehead)",
+  //     innerExperience:
+  //       "Mindfulness/meditation (vipassanā, zazen); koans (Zen); mystical insight (Sunyata in Mahāyāna)",
+  //     growthDynamics:
+  //       "Low birthrates (≈1.6 globally); little net growth (some decline); few converts outside Asia (some Western interest but offset by aging populations)",
+  //   },
+  // },
   {
     id: "judaism",
     name: "Judaism",
