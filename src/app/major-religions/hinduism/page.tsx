@@ -66,8 +66,6 @@ export default function HinduismPage() {
             <TabsTrigger value="analytical">Analytical</TabsTrigger>
             <TabsTrigger value="historical">Historical</TabsTrigger>
             <TabsTrigger value="geographical">Geographical</TabsTrigger>
-            <TabsTrigger value="empirical">Empirical</TabsTrigger>
-            <TabsTrigger value="graphs">Graphs</TabsTrigger>
           </TabsList>
 
           <TabsContent value="analytical" className="space-y-6">
