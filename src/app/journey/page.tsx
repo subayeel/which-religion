@@ -864,10 +864,362 @@ export default function JourneyPage() {
               </p>
             </section>
 
-            <section aria-labelledby="next-steps">
-              <h2 id="next-steps" className="text-3xl font-bold mt-12 mb-6">
-                To be continued...
+            <aside
+              className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+              role="note"
+            >
+              <p className="font-semibold mb-2">
+                Tool Used for Research:{" "}
+                <Link
+                  href="https://project-vision-bay.vercel.app/"
+                  className="text-primary hover:underline"
+                >
+                  Project Vision
+                </Link>
+              </p>
+              <p>
+                <strong>Conclusion:</strong> After an in-depth study of the
+                current state of affairs, we conclude that the current system is
+                especially design to keep you in the state of ignorance and
+                exploit you with their own agenda. Now, we have an understanding
+                of how exactly we reached this state of affairs.
+              </p>
+            </aside>
+
+            <section aria-labelledby="current-state-of-affairs">
+              <p className="mb-8">
+                The above tool (Project Vision) provides clarity on how the New
+                World Order has infiltrated every level of human life from the
+                personal to the international.
+              </p>
+
+              <p className="mb-8">
+                This integration is carefully designed to prevent rebellion.
+                Rebellion and revolt are inevitable whenever a system collides
+                with the natural disposition of human beings.
+              </p>
+
+              <p className="mb-8">
+                The entertainment industry plays a major role in keeping the
+                masses distracted.
+              </p>
+
+              <p className="mb-8">
+                Families have been broken at the nuclear level to prevent unity
+                and the accumulation of power within communities.
+              </p>
+
+              <p className="mb-8">
+                Drugs, cigarettes, intoxicants and prostitution are spread
+                widely to keep the youth distracted.
+              </p>
+
+              <p className="mb-8">
+                The dollar based economy has created a new reality called
+                Inflation which reshapes global power dynamics, concentrates
+                wealth in the United States and helps it maintain hegemony.
+              </p>
+
+              <p className="mb-8">
+                Governments are kept in check through loans from international
+                banks and sanctions by the USA.
+              </p>
+
+              <p className="mb-8">Children are kept occupied with games.</p>
+
+              <p className="mb-8">
+                Teenagers are exploited through romance, gaming, intoxicants,
+                cigarettes and material desires. They are then trapped with
+                student loans.
+              </p>
+
+              <p className="mb-8">
+                Young adults in their twenties are brainwashed, pushed into
+                pointless politics, gender confusion and endless debates, while
+                their energy is drained by nine to five jobs as they pay off
+                student loans.
+              </p>
+
+              <p className="mb-8">
+                Adults in their thirties remain occupied with politics,
+                mortgages, fragile marriages, anxiety over their children's
+                future, and the noise of governments playing musical chairs.
+                They dream of retirement while being consumed by worry.
+              </p>
+
+              <p className="mb-8">
+                After forty, health problems begin, energy declines and the
+                ability to do anything meaningful in life fades.
+              </p>
+
+              <section aria-labelledby="family">
+                <h3 id="family" className="text-2xl font-bold mt-12 mb-6">
+                  Family
+                </h3>
+
+                <blockquote className="border-l-4 border-primary pl-6 py-4 my-8 bg-muted/30 rounded-r-lg">
+                  <p className="text-2xl font-semibold text-foreground mb-4">
+                    "The family system has collapsed. The framework of marriage
+                    is disintegrating, and household power dynamics are chaotic
+                    under the narrative that men and women are the same."
+                  </p>
+                </blockquote>
+
+                <p className="mb-8">
+                  The breakdown of natural gender roles contradicts human
+                  nature, weakens marriages and neglects the well being of
+                  children.
+                </p>
+              </section>
+
+              <section aria-labelledby="community">
+                <h3 id="community" className="text-2xl font-bold mt-12 mb-6">
+                  Community
+                </h3>
+
+                <p className="mb-8">
+                  Communities should be built on unity among families and
+                  neighbors. Instead, people are isolated, trapped in their own
+                  problems, lacking brotherhood and common goals. Bias, crime,
+                  polarized media and mistrust have destroyed social bonds.
+                </p>
+
+                <p className="mb-6">Key issues include:</p>
+
+                <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                  <ol className="space-y-3 list-decimal list-outside">
+                    <li>
+                      Housing stress and rising homelessness caused by inflation
+                      after abandoning the gold based currency
+                    </li>
+                    <li>
+                      Loneliness and isolation caused by the illusion of love in
+                      movies leading to shallow relationships, emotional
+                      baggage, delayed marriages and unrealistic expectations
+                    </li>
+                    <li>
+                      Misinformation, polarization and eroded trust driven by
+                      corrupt leaders to keep people numb combined with poor
+                      education and the collapse of objective morality
+                    </li>
+                    <li>
+                      Substance abuse and poor health access caused by weak
+                      government regulation, lack of family support and the open
+                      availability of addictive substances such as vaping,
+                      hookah and cigarettes that escalate to stronger drugs
+                    </li>
+                    <li>Increased promiscuity</li>
+                    <li>Failed marriages</li>
+                    <li>Children born outside of marriage</li>
+                    <li>Usury</li>
+                    <li>Economic inequality</li>
+                    <li>Rising abortions</li>
+                    <li>Exploitation of women</li>
+                  </ol>
+                </div>
+              </section>
+
+              <section aria-labelledby="country">
+                <h3 id="country" className="text-2xl font-bold mt-12 mb-6">
+                  Country
+                </h3>
+
+                <p className="mb-8">
+                  There are nearly 198 countries, most of whose borders were
+                  drawn by the British Empire to sow future conflict. In 2025
+                  the consequences of this divide and rule policy are clearer
+                  than ever.
+                </p>
+
+                <p className="mb-8">
+                  But the question remains. If rulers know that these borders
+                  are artificial, why do they not erase them, unite with
+                  neighboring nations and eliminate animosity?
+                </p>
+
+                <p className="mb-8">
+                  The answer is complex. History shows us that those who tried
+                  to unite nations and erase artificial lines were swiftly
+                  destroyed by forces we now recognize.
+                </p>
+
+                <blockquote className="border-l-4 border-primary pl-6 py-4 my-8 bg-muted/30 rounded-r-lg">
+                  <p className="text-2xl font-semibold text-foreground mb-4">
+                    "The fear of the large elephant keeps countries divided.
+                    Wars rage on, nations collapse, yet two groups benefit the
+                    most:"
+                  </p>
+                </blockquote>
+
+                <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                  <ol className="space-y-3 list-decimal list-outside">
+                    <li>The arms dealers who profit from selling defense</li>
+                    <li>The banks that fund both sides of the war</li>
+                  </ol>
+                </div>
+
+                <p className="mb-8">
+                  Banks trap nations in massive loans through compound interest.
+                  Countries lose sovereignty and dare not rebel, as no one else
+                  will unite with them.
+                </p>
+
+                <p className="mb-8">
+                  Globalization further cements borders, making survival
+                  impossible outside the banking system built on usury. Trade
+                  and stability depend on strong borders. Meanwhile, nations
+                  experiment with democracy, monarchy and communism but all are
+                  deteriorating.
+                </p>
+
+                <p className="mb-8">
+                  After the world wars international organizations were formed
+                  to prevent further atrocities, yet they failed. The only true
+                  deterrent to war became nuclear weapons.
+                </p>
+
+                <blockquote className="border-l-4 border-destructive pl-6 py-4 my-8 bg-destructive/10 rounded-r-lg">
+                  <p className="text-2xl font-semibold text-foreground mb-4">
+                    "Compound interest has enslaved entire nations. The world is
+                    being pushed towards tyrannical-One World Order and the
+                    transition will be chaotic. Civil wars will erupt. With
+                    current geopolitics the Great Chaos is imminent."
+                  </p>
+                </blockquote>
+
+                <p className="mb-8">Coming events cast their shadows before.</p>
+
+                <p className="mb-8">
+                  In 2025 those shadows are dark and visible at every level.
+                </p>
+              </section>
+
+              <section aria-labelledby="what-must-be-done">
+                <h3
+                  id="what-must-be-done"
+                  className="text-2xl font-bold mt-12 mb-6"
+                >
+                  What Must Be Done
+                </h3>
+
+                <p className="mb-8">
+                  Challenging the elites of this New World Order may not be
+                  within our power. But we must be aware of the dangers ahead
+                  and refuse to fuel their fire.
+                </p>
+
+                <p className="mb-8">So, what should we do?</p>
+
+                <div className="bg-muted/30 rounded-lg p-6">
+                  <ul className="space-y-3 list-decimal list-outside">
+                    <li>Work on yourself</li>
+                    <li>Be the best version of yourself</li>
+                    <li>Stay away from the distractions of the elites</li>
+                    <li>Spread awareness about this imminent danger</li>
+                    <li>Avoid EMIs and loans</li>
+                    <li>Understand that the elites' power lies in usury</li>
+                    <li>Discover your true purpose in life</li>
+                    <li>Understand the reality of existence</li>
+                    <li>Remember your beginning as a weak child</li>
+                    <li>
+                      Remember that you will return to weakness and perish
+                    </li>
+                    <li>Accept human weakness</li>
+                    <li>Recognize the dangers of unchecked animal desire</li>
+                    <li>Embrace principles, discipline and morality</li>
+                    <li>
+                      Learn the difference between subjective and objective
+                      morality
+                    </li>
+                    <li>Study objective morality</li>
+                    <li>
+                      Read basic philosophy and understand the Necessary
+                      Existence
+                    </li>
+                    <li>Do comparative religious studies</li>
+                    <li>
+                      Understand the difference between monotheism and
+                      polytheism
+                    </li>
+                    <li>Find the true monotheistic religion</li>
+                    <li>Bind yourself to objective morality</li>
+                    <li>Research Islam</li>
+                    <li>Learn about Imaan which means faith</li>
+                    <li>
+                      Strive for Ihsaan which means excellence in every action
+                    </li>
+                    <li>Raise your family within the framework of Islam</li>
+                    <li>Instill love and fear of God in your heart</li>
+                    <li>
+                      Replace the love of worldly things with the love of God
+                    </li>
+                    <li>Stay firm on the path of Islam</li>
+                    <li>Live in this world like a traveler</li>
+                    <li>Adopt minimalism without extremes</li>
+                    <li>Balance Deen and Duniya</li>
+                    <li>Engage in Dawah which means calling others to truth</li>
+                    <li>Prepare for death:</li>
+                  </ul>
+                </div>
+
+                <div className="bg-muted/30 rounded-lg p-6">
+                  <ol className="space-y-3 list-decimal list-outside">
+                    <li>Stay humble and truthful to avoid enemies</li>
+                    <li>
+                      Launch Dawah projects that continue after you are gone
+                    </li>
+                    <li>Build charity foundations</li>
+                    <li>Construct a mosque</li>
+                    <li>Dig wells</li>
+                    <li>Guide your children to the straight path</li>
+                    <li>Write Islamic books</li>
+                    <li>Teach children</li>
+                    <li>Publish articles</li>
+                    <li>Produce educational content</li>
+                  </ol>
+                </div>
+              </section>
+            </section>
+
+            <section aria-labelledby="conclusion">
+              <h2 id="conclusion" className="text-3xl font-bold mt-12 mb-6">
+                Conclusion
               </h2>
+
+              <p className="mb-8">
+                We have reached the conclusion that the current system is
+                especially designed to keep you in the state of ignorance and
+                exploit you with their own agenda.
+              </p>
+
+              <p className="mb-8">
+                Now, we have an understanding of how exactly we reached this
+                state of affairs.
+              </p>
+
+              <p className="mb-8">
+                Now, you have understood the reality of Objective Morality. The
+                reality of the existence of God. The reality of the purpose of
+                creation. The reality of the purpose of life.
+              </p>
+
+              <p className="mb-8">
+                Now, you have found the true religion. The true religion that
+                solves today's problems, and that can be implemented in the
+                complex reality of 2025.
+              </p>
+
+              <p className="mb-8">
+                Now, you have the mental clarity on the current affairs, the
+                conflicting ideologies and no more confusion regarding what is
+                right and what is wrong. This clarity is very much needed in
+                these tough times.
+              </p>
+
+              <p className="mb-8">
+                Thank you for joining me on this journey. I hope you have found
+                the mental peace you were looking for.
+              </p>
             </section>
           </div>
         </div>
