@@ -105,26 +105,108 @@ export default function JourneyPage() {
               </div>
             </section>
 
-            <p className="text-xl leading-relaxed text-muted-foreground mb-8">
-              There are around 8 billion people in the world, including you.
-              Everyone has their own goals and objectives in life, but these are
-              often shaped by where they live and whom they interact with.
-              However, there are certain things that are common to all of us.
-            </p>
+            {/* Anchor */}
+            <section>
+              <h1 className="text-3xl font-bold mt-12 mb-6">
+                Module 1: The need for Anchor points
+              </h1>
 
-            <p className="mb-8">
-              For example, a mother's love for her child, the attraction toward
-              the opposite gender, the longing for a clean environment, and the
-              desire for peace and stability in both personal and professional
-              life, these are universal feelings.
-            </p>
+              <p className="mb-8">
+                In this journey, we are are going for observation on every
+                level. And of course, for every observation to take place we
+                need a point of reference. In this journey, these points of
+                reference should be an objective so that a human from every
+                corner of the world can resonate with it.
+              </p>
+              <p>
+                And those anchors which will always keep your mindset grounded
+                to reality are following:
+              </p>
+              <ul className="list-decimal ml-8">
+                <li>
+                  <strong>Birth:</strong> You had a beginning in this world just
+                  like everything in this world had a beginning.
+                </li>
+                <li>
+                  <strong>Death:</strong> You will be forgotten in 100 years
+                  from now.
+                </li>
+                <li>
+                  <strong>Human Innate Disposition:</strong> These dispositions
+                  are present in every human beings.
+                </li>
+                <li>
+                  <strong>Existence:</strong> You exist in this world, others
+                  also exist, this is not an illusion. Your intentions,actions
+                  and goals have consequences.
+                </li>
+                <li>
+                  <strong>Time:</strong> Time flows in one direction and it does
+                  not stop and it cannot be reversed.
+                </li>
+              </ul>
 
-            <section aria-labelledby="maslows-hierarchy-of-needs">
-              <h2
-                id="maslows-hierarchy-of-needs"
-                className="text-3xl font-bold mt-12 mb-6"
+              <p className="text-2xl font-semibold my-8">
+                “You are sailing on a boat and your vision is limited due to
+                foggy weather, and thus the length of journey is unknown."
+              </p>
+
+              <p className="text-lg leading-relaxed mb-6">
+                The state of desperation during the sail increases every second
+                with the limited supply of food, increasing thirst, and the fear
+                of storms, which compels you to find the right direction to
+                navigate.
+              </p>
+
+              <p className="text-lg leading-relaxed mb-6">
+                The objective from here onwards will be finding navigation in
+                this life. The sailor will use stars at night to navigate and
+                the Sun's movement during the day, but the question is{" "}
+                <span className="text-xl font-semibold text-primary">
+                  what are you going to look towards to find meaning, structure,
+                  and purpose in your life?
+                </span>
+              </p>
+
+              <p className="text-lg leading-relaxed mb-6">
+                Before we begin our observations, let's take a deep dive into
+                each anchor we listed, so that our hearts and minds are in sync,
+                which is required to understand the upcoming text.
+              </p>
+
+              <p className="text-lg leading-relaxed mb-6">
+                These 2 anchors need no more clarity: your birth and your death,
+                as there is no person in this world who has doubts regarding
+                this. Let's dive into the other 3 anchors: understanding and
+                validating their authenticity to such a degree that our minds
+                understand the concept and our hearts accept it without a shred
+                of doubt.
+              </p>
+            </section>
+            {/* Human Innate Dispositions */}
+            <section aria-labelledby="human-innate-dispositions">
+              <h1
+                className="text-2xl font-bold mt-12 mb-6"
+                id="human-innate-dispositions"
               >
-                Maslow's Hierarchy of Needs
+                1. Human Innate Dispositions
+              </h1>
+              <p className="text-muted-foreground mb-8">
+                There are around 8 billion people in the world, including you.
+                Everyone has their own goals and objectives in life, but these
+                are often shaped by where they live and whom they interact with.
+                However, there are certain things that are common to all of us.
+              </p>
+
+              <p className="mb-8">
+                For example, a mother's love for her child, the attraction
+                toward the opposite gender, the longing for a clean environment,
+                and the desire for peace and stability in both personal and
+                professional life, these are universal feelings.
+              </p>
+
+              <h2 className="text-xl font-bold mt-12 mb-6">
+                1.1 Maslow's Hierarchy of Needs
               </h2>
               <p className="mb-6">
                 I would like to refer to research of Maslow's hierarchy of needs
@@ -193,97 +275,342 @@ export default function JourneyPage() {
                   </li>
                 </ol>
               </div>
-            </section>
 
-            <p className="mb-8">
-              There are many such innate desires that are common among humans,
-              regardless of their location or mentality. My argument is that
-              these innate feelings and the motivation to bring peace and
-              prosperity into one's life led to the creation of communities,
-              groups of people living together and supporting one another.
-              However, this can sometimes become problematic, leading to the
-              need for rules, which were established by the responsible members
-              of the community.
-            </p>
-
-            <p className="mb-8">
-              While I have mentioned the positive desires of humans, the issue
-              arises with desires that drive individuals to break the rules set
-              by the community, for example, the desire for power, respect, and
-              wealth. These lead to many problems. Communities become divided
-              over which rules are best, and eventually, a single community
-              splits into multiple parts.
-            </p>
-
-            <p className="mb-8">
-              This gives rise to different countries, languages, philosophies,
-              religions, castes, and so on. Each group believes they are on the
-              right path. This belief continues for generations. A child follows
-              the path of the parent, and the biases instilled in the child's
-              mind become so deeply rooted that it becomes almost impossible for
-              them to question their inherited way of life.
-            </p>
-
-            <p className="mb-8">
-              Differences in customs, rituals, ethics, and rules can coexist.
-              However, the consequence of this is subjective morality, which
-              history has repeatedly shown cannot truly coexist. Time and again,
-              one group declares war on another because they disagree on moral
-              grounds. Each person believes their version of morality is true,
-              often worsening the situation, whether due to negative desires or
-              not.
-            </p>
-
-            <aside
-              className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
-              role="note"
-            >
-              <p className="text-lg font-semibold mb-2">
-                One thing is certain:
+              <p className="mb-8">
+                <strong>Maslow's hierarchy of needs</strong> is a framework for
+                understanding the motivations and behaviors of all humans
+                irrespective of their location or mentality.
               </p>
-              <p>
-                No matter how many times humanity is reset by an apocalypse, we
-                are always bound to end up in the same place due to our innate
-                dispositions. There seems to be no alternative, unless we
-                develop a system that eliminates subjective morality and governs
-                the Line of Existence at level where there is chaos.
-              </p>
-            </aside>
 
-            <section aria-labelledby="the-central-question">
+              <p className="mb-8">
+                There are many such innate desires that are common among all
+                humans. These innate feelings and the motivator to make change
+                leads to conflicts on community level.
+              </p>
+
+              <p className="mb-8">
+                <strong>Cognitive dissonance</strong> plays a major role here
+                the discomfort felt when beliefs, identity, or group loyalty
+                conflict with evidence or lived experience, pushing individuals
+                and communities to rationalize existing norms and resist change.
+              </p>
+
+              <p className="mb-8">
+                This gives rise to different communities, languages,
+                philosophies, religions, castes, and so on. Each group believes
+                they are on the right path.
+              </p>
+
+              <p className="mb-8">
+                <strong>Time </strong>solidifies this beliefs which were built
+                on weak foundations This belief continues for generations. A
+                child follows the path of the parent, and the biases instilled
+                in the child's mind become so deeply rooted that it becomes
+                almost impossible for them to question their inherited way of
+                life.
+              </p>
+
+              <p className="mb-8">
+                The consequence of this is subjective morality, which history
+                has repeatedly shown cannot truly coexist. Time and again, one
+                group declares war on another because they disagree on moral
+                grounds. Each person believes their version of morality is true,
+                often worsening the situation. And,{" "}
+                <strong>The Loop of Suffering</strong> continues.
+              </p>
+
+              <aside
+                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+                role="note"
+              >
+                <p className="text-lg font-semibold mb-2">
+                  One thing is certain:
+                </p>
+                <p className="mb-4">
+                  No matter how many times humanity is reset by an apocalypse,
+                  we are always bound to end up in the same place due to our
+                  innate dispositions.
+                </p>
+
+                <p>
+                  <strong> What breaks this loop?</strong>
+                  <br />A system that eliminates <b>subjective morality</b>,
+                  leaves no room for <b>Cognitive Dissonance</b>, and governs
+                  the <b>Line of Existence</b> at level where there is chaos.
+                </p>
+              </aside>
+
               <h2
                 id="the-central-question"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-xl font-bold mt-12 mb-6"
               >
-                The Central Question
+                1.2 The Central Question
               </h2>
-              <p className="mb-6">
-                The question remains: What breaks this loop? What is that one
-                thing that fulfills the innate disposition of humans? What
-                promises a stable system at every level? What allows multiple
-                systems to coexist despite the historical divisions in society?
-                What can solve modern problems like obesity, poverty, organized
-                crime, general crime, drugs, public obscenity, and the
-                degeneration of the entertainment industry? What can offer
-                sustainable economic development without infringing on personal
-                freedom? What can ensure a proper division of duties between the
-                government and the citizen?
+              <p className="mb-4">
+                On Human level this is the central question:
               </p>
+              <ul className="mb-6 list-decimal pl-6 space-y-2">
+                <li>What breaks this loop?</li>
+                <li>
+                  What is that one thing that fulfills the innate disposition of
+                  humans?
+                </li>
+                <li>What promises a stable system at every level?</li>
+                <li>
+                  What allows multiple systems to coexist despite the historical
+                  divisions in society?
+                </li>
+                <li>
+                  What can solve modern problems like obesity, poverty,
+                  organized crime, general crime, drugs, public obscenity, and
+                  the degeneration of the entertainment industry?
+                </li>
+                <li>
+                  What can offer sustainable economic development without
+                  infringing on personal freedom?
+                </li>
+                <li>
+                  What can ensure a proper division of duties between the
+                  government and the citizen?
+                </li>
+              </ul>
+
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-xl font-bold mb-8 text-foreground">
+                  1.3 Exploring Constitutional Solutions
+                </h2>
+
+                <div className="space-y-8">
+                  {/* Question 1 */}
+                  <div className="bg-card border-l-4 border-blue-500 pl-6 py-4">
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">
+                      Are we going to draft a new constitution which governs the
+                      whole world? Is this not the New World Order towards which
+                      the underground societies are working towards?
+                    </h3>
+                    <div className="text-muted-foreground leading-relaxed">
+                      <p>
+                        But as per the Community scenario, the people with
+                        authority will have biases and the designing of the
+                        constitution is again going to feed the Loop of
+                        Suffering which we are trying to break. The subjective
+                        morality again will play a huge role in determining the
+                        policies of humans and ultimately the constitution will
+                        end up just like other constitutions of any country in
+                        2025.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Question 2 */}
+                  <div className="bg-card border-l-4 border-green-500 pl-6 py-4">
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">
+                      Can we implement the trial and error method and keep
+                      improving the constitution with time?
+                    </h3>
+                    <div className="text-muted-foreground leading-relaxed">
+                      <p>
+                        This makes the constitution volatile and easily
+                        corruptible to the whims and desires of the people.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Question 3 */}
+                  <div className="bg-card border-l-4 border-purple-500 pl-6 py-4">
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">
+                      Can we go with the majority of people?
+                    </h3>
+                    <div className="text-muted-foreground leading-relaxed">
+                      <p>
+                        No, the majority is not always right and people's
+                        perspective can be easily hijacked via the Media and
+                        Entertainment industry by the elites.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Question 4 */}
+                  <div className="bg-card border-l-4 border-orange-500 pl-6 py-4">
+                    <h3 className="text-lg font-semibold mb-3 text-foreground">
+                      If any one individual cannot be trusted for this task and
+                      the majority is also not a viable option, then what
+                      sources of Ethics and Morality do we have?
+                    </h3>
+                    <div className="text-muted-foreground leading-relaxed">
+                      <p>
+                        If you observe the current constitution and the rulings
+                        in 2025, they are majorly influenced by one or the other
+                        religions. Unfortunately, in the realm of Ethics,
+                        Science and Mathematics cannot craft an ethical
+                        framework. The principles of ethics and morality were
+                        mainly derived from religion and supported by human
+                        innate disposition which craves peace and stability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Conclusion */}
+                <div className="mt-12 bg-muted/50 rounded-lg">
+                  <h2 className="text-xl font-bold mb-6 text-foreground">
+                    1.4 Conclusion: Human Innate Dispositions
+                  </h2>
+                  <div className="prose prose-lg max-w-none">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      The fundamental challenge in creating a universal
+                      constitutional framework lies in recognizing that human
+                      beings possess innate dispositions that transcend
+                      cultural, religious, and political boundaries. These
+                      dispositions are not learned behaviors but rather inherent
+                      characteristics that define our humanity.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      The human innate disposition craves{" "}
+                      <strong>peace and stability</strong> above all else. This
+                      universal longing manifests in our desire for:
+                    </p>
+                    <ul className="list-disc pl-6 mb-4 text-muted-foreground space-y-2">
+                      <li>Harmony in relationships and communities</li>
+                      <li>Predictable and just social structures</li>
+                      <li>Freedom from fear and uncertainty</li>
+                      <li>Meaningful purpose and direction</li>
+                      <li>Connection with something greater than ourselves</li>
+                    </ul>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Any constitutional framework that fails to acknowledge and
+                      address these fundamental human needs will inevitably lead
+                      back to the Loop of Suffering. The solution must emerge
+                      from understanding these innate dispositions rather than
+                      imposing external moral frameworks that conflict with our
+                      essential nature.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </section>
 
-            <p className="mb-8">
-              To solve any issues, we have to dig deep into the details and
-              workings of the current nature, beginning from the atom to the
-              functioning of the space-time continuum.
-            </p>
-
+            {/* Existence */}
             <section aria-labelledby="the-line-of-existence">
               <h2
                 id="the-line-of-existence"
                 className="text-3xl font-bold mt-12 mb-6"
               >
-                The Line of Existence
+                2. Existence
               </h2>
+
+              <p className="mb-8">
+                Let's make this simple:{" "}
+                <strong>you are real, and your actions matter.</strong> Claims
+                like "we're in the Matrix" or "it's all a simulation" are
+                interesting thought experiments, but they are irrelevant to your
+                daily life because the world you experience is{" "}
+                <strong>real enough to count</strong>.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-4">
+                2.1 The Scientific Test of Existence
+              </h3>
+
+              <p className="mb-6">
+                The core of science is testing reality. If we truly lived in a
+                simulation, a few things would likely be true:
+              </p>
+
+              <div className="mb-6 space-y-4">
+                <div>
+                  <p className="mb-2">
+                    <strong>1. Glitches:</strong> A computer system, no matter
+                    how powerful, has limits. We might see{" "}
+                    <strong>"rounding errors"</strong> in physics—like space
+                    being made of tiny, detectable pixels instead of being
+                    smooth and continuous.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <strong>2. Lazy Rendering:</strong> To save power, the
+                    simulation might only load details when you look at them
+                    (like a video game only fully rendering the room you're
+                    standing in).
+                  </p>
+                </div>
+              </div>
+
+              <h4 className="text-lg font-semibold mb-3">The Evidence:</h4>
+
+              <div className="mb-6 space-y-3">
+                <p>
+                  <strong>• No Glitches Found:</strong> Scientists constantly
+                  smash atoms together and look deep into space. Every test we
+                  run confirms that our universe's laws are{" "}
+                  <strong>perfectly consistent</strong> and{" "}
+                  <strong>continuous</strong>. We find no "pixels," no rounding
+                  errors, and no breaks in the code.
+                </p>
+
+                <p>
+                  <strong>• The Laws Are Solid:</strong> The rules of gravity,
+                  electromagnetism, and atomic structure work the same way
+                  everywhere, all the time. This{" "}
+                  <strong>robust consistency</strong> is the signature of a{" "}
+                  <strong>base reality</strong>, not a constantly managed,
+                  resource-limited simulation.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 p-4 mb-6">
+                <p className="font-semibold text-blue-800 dark:text-blue-200">
+                  <strong>Conclusion:</strong> Based on all the evidence we can
+                  gather, the simplest and most logical conclusion is that{" "}
+                  <strong>we exist in a true, physical reality</strong>—the Null
+                  Hypothesis.
+                </p>
+              </div>
+
+              <h3 className="text-xl font-semibold mb-4">
+                2.2 Why the Matrix Doesn't Matter
+              </h3>
+
+              <p className="mb-4">Here's the practical truth:</p>
+
+              <p className="mb-6">
+                Even if our universe <em>was</em> the most perfect simulation
+                ever created,{" "}
+                <strong>it makes no difference to your life</strong>.
+              </p>
+
+              <div className="mb-6 space-y-3">
+                <p>
+                  <strong>• The Rules are Real:</strong> The pain you feel is
+                  real. The love you share is real. Gravity is real. The fact
+                  that the physical rules of this world are{" "}
+                  <strong>consistent and inescapable</strong> means you must
+                  treat them as absolute truth.
+                </p>
+
+                <p>
+                  <strong>• Consequences are Real:</strong> Your goals,
+                  intentions, and actions have real, measurable consequences{" "}
+                  <strong>within this reality</strong>. Escaping reality by
+                  claiming it's "just a simulation" doesn't stop your car from
+                  hitting a wall or prevent your words from hurting a friend.
+                </p>
+              </div>
+
+              <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-500 p-4 mb-8">
+                <p className="font-semibold text-green-800 dark:text-green-200">
+                  <strong>
+                    Your existence is defined by the consequences of your
+                    choices.
+                  </strong>{" "}
+                  Since the rules of this reality hold true regardless of its
+                  origin, the most productive and meaningful approach is to
+                  accept it as the <strong>"Line of Existence"</strong> that
+                  governs everything you are and everything you do.
+                </p>
+              </div>
+
               <p className="mb-6">
                 For easier and quicker understanding, let's print a line that
                 summarizes the structure of our existence:
@@ -336,19 +663,15 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                Let me elaborate further: On the Existence Line, if we go before
-                Human, we see order, constants, and systems that work well
-                together. Similarly, if we go after Country, we see stability.
+                On the Existence Line, the components above Human and after
+                Country, we see order, constants, and systems that work
+                perfectly together. The stability and constants found in those
+                parts of the Existence Line are perfect and precise.
               </p>
 
-              <p className="mb-8">
-                The stability and constants found in those parts of the
-                Existence Line are so perfect and detailed that humans have
-                convinced themselves there must be a designer behind them. It is
-                common sense to conclude the existence of a designer after
-                seeing a perfect design. Thus, we have multiple religions and
-                philosophies, each claiming they have a message from this
-                designer.
+              <p className="text-2xl my-8 font-semibold">
+                It is common sense to conclude the existence of a designer after
+                seeing a perfect design.
               </p>
 
               <p className="mb-8">
@@ -356,317 +679,189 @@ export default function JourneyPage() {
                 are trying to figure out a stable system? It is important
                 because, if you observe the Existence Line once more, the place
                 where there is chaos needs a proper system. So, if such a
-                designer does exist, then it must have provided the ideal
-                system.
+                designer does exist, then it must have provided the ideal system
+                which gives answer to 'The central questions' we asked earlier.
               </p>
             </section>
 
-            <section aria-labelledby="the-concept-of-god">
+            {/* Time */}
+            <section aria-labelledby="time">
               <h2
                 id="the-concept-of-god"
                 className="text-3xl font-bold mt-12 mb-6"
               >
-                The Concept of God
+                3. Time
               </h2>
-              <p className="mb-6">
-                The idea of there being a Creator/Designer/God or Supreme Being
-                is one that has kept many people awake at night. Let's try to
-                figure out the right questions to ask before we draw any
-                conclusions.
+
+              <p className="mb-4">
+                Time is one of the most profound anchors of existence. Though
+                modern science have revealed the relativistic nature of time,
+                showing that it bends and shifts under the laws of physics, this
+                should not diminish its significance in human life.
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-semibold mb-4">Key Questions:</h3>
-                <ol className="space-y-3">
-                  <li>How did the concept of God come into existence?</li>
-                  <li>What do you mean by God?</li>
-                  <li>Do we need God to explain our existence? Why God?</li>
-                  <li>Can there be more than one God?</li>
-                  <li>
-                    Do logic, reasoning, mathematics, and science align with the
-                    concept of God, or are we going for a "God of the gaps"?
-                  </li>
-                  <li>Where is God?</li>
-                  <li>
-                    Doesn't the existence of evil negate the existence of an
-                    all-perfect God?
-                  </li>
-                  <li>What is the purpose of all this?</li>
-                </ol>
-              </div>
+              <h3 className="text-xl font-bold mb-2">3.2 Concepts of Time</h3>
 
-              <aside
-                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
-                role="note"
-              >
-                <p className="font-semibold mb-2">
-                  Tool:{" "}
-                  <Link
-                    href="/spiritual-journey"
-                    className="text-primary hover:underline"
-                  >
-                    Spiritual Journey
-                  </Link>
-                </p>
-              </aside>
-            </section>
+              <p className="mb-4">
+                Lets clarify some concepts of time to avoid any confusion about
+                Direction of time:
+                <ul className="list-disc ml-8">
+                  <li>
+                    {" "}
+                    <strong>What is time, exactly;</strong> Physicists define
+                    time as the progression of events from the past to the
+                    present into the future. Basically, if a system is
+                    unchanging, it is timeless. Time can be considered to be the
+                    fourth dimension of reality, used to describe events in
+                    three-dimensional space. It is not something we can see,
+                    touch, or taste, but we can measure its passage.
+                  </li>
+                  <li>
+                    {" "}
+                    <strong>Time Dilation; </strong> a concept where the time
+                    between events becomes longer (dilated) the closer one
+                    travels to the speed of light. Moving clocks run more slowly
+                    than stationary clocks, with the effect becoming more
+                    pronounced as the moving clock approaches light speed.
+                  </li>
 
-            <section aria-labelledby="conclusion">
-              <h2 id="conclusion" className="text-3xl font-bold mt-12 mb-6">
-                Conclusion
-              </h2>
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <ol className="space-y-3">
-                  <li>Design requires a designer.</li>
                   <li>
-                    All-powerful, all-knowledgeable, ever-existing, independent,
-                    and outside of space-time.
+                    <strong>Arrow of time; </strong>
+                    physics equations work equally well whether time is moving
+                    forward into the future (positive time) or backward into the
+                    past (negative time.) However, time in the natural world has
+                    one direction, called the arrow of time.
                   </li>
-                  <li>Yes, infinite regression does not lead to creation.</li>
-                  <li>
-                    There is one God. Multiple gods would lead to chaos, but we
-                    see stability. Logically speaking, there cannot be two
-                    equally powerful entities.
-                  </li>
-                  <li>
-                    Yes, we are not appealing to a "God of the gaps." In fact,
-                    each law and each constant we find in any field of study
-                    implies the existence of a designer.
-                  </li>
-                  <li>
-                    No idea. One thing is certain: since space-time is the
-                    creation of God, He is outside of it, just like a software
-                    developer doesn't live inside the software.
-                  </li>
-                  <li>
-                    To understand the existence of free will to do good and bad,
-                    the concept of good and bad, the concept of day and night,
-                    and many similar signs, we need to understand the purpose of
-                    creation. This requires further study of the current world
-                    and a search for that purpose. And, that is our next step so
-                    strap in we are going for hunting the best religion.
-                  </li>
-                </ol>
-              </div>
-            </section>
-
-            <section aria-labelledby="the-crossroads">
-              <h2 id="the-crossroads" className="text-3xl font-bold mt-12 mb-6">
-                The Crossroads
-              </h2>
-              <p className="mb-8">
-                Now, we are at a thrilling yet daunting crossroads, forced to
-                examine the systems and religions that dominate the 21st
-                century. The stakes are high, and the complexity is staggering.
+                </ul>
               </p>
 
-              <p className="mb-8">
-                To truly grasp the matter, we must plunge fearlessly into the
-                depths of existing systems that attempt to answer life's most
-                profound questions, religions and philosophies. But in 2025, the
-                challenge is greater than ever. The rigid separation of religion
-                and state adds layers of complexity, and the modern trend of
-                portraying religion as nothing more than "backward thinking" has
-                created a hostile climate. These attitudes don't just discourage
-                open dialogue, they actively choke the oxygen needed for
-                unbiased, honest research.
+              <h3 className="text-xl font-bold mb-2">
+                3.3 Your relationship with Time
+              </h3>
+              <p className="mb-4">
+                Its been 13.5 billion years since <strong>The Big Bang</strong>.
+                The process of life began around 4.3 billion years ago but the
+                Human race(Homo Sapiens) are estimated to have been here for
+                last 300,000 years. As per the condition of sun, after 1 billion
+                years it would become a gas giant making the earth un habitable.
               </p>
 
-              <p className="mb-8">
-                Still, we must proceed. First, we will explore religions
-                broadly, then compare them, and finally, take a deep dive into
-                the one that offers the most relevant and sustainable framework
-                for the world of 2025.
-              </p>
-
-              <p className="mb-8">
-                But even if we discover the "right" religion or philosophy, our
-                work doesn't end there. We will have to scour history for
-                examples of systems that were successfully woven into everyday
-                life, systems that genuinely solved the issues of chaos and
-                instability outlined earlier. And this will not be easy, because
-                the current global framework, often referred to as the "New
-                World Order," has been masterful at burying or erasing any
-                competing alternative before it has the chance to take root.
-                This is not just research, it's a battle for truth under layers
-                of suppression.
+              <p className="mb-4">
+                Above mentioned facts might not matter to you as a human being
+                but the following facts are definitely important to consider:
+                <ul className="list-decimal ml-8">
+                  <li>Average life span of human being is 60.</li>
+                  <li>
+                    Your time began on this earth with the first heartbeat, when
+                    you were inside your mother's womb.
+                  </li>
+                  <li>
+                    You hear never rests, it beats around ~100,000 times in a
+                    single day. Each Heart beat of yours is a sign that the end
+                    is nearing.
+                  </li>
+                  <li>
+                    Not a single human being denies Death, it is when your
+                    journey ends but the Time goes on.
+                  </li>
+                  <li>
+                    The Arrow of Time is real and you cannot escape the passage
+                    of time.
+                  </li>
+                </ul>
               </p>
             </section>
 
-            <section aria-labelledby="historical-context">
-              <h2
-                id="historical-context"
-                className="text-3xl font-bold mt-12 mb-6"
-              >
-                Historical Context
-              </h2>
-              <p className="mb-6">
-                After looking into human history, we find that our recorded data
-                begins around 3500 BC. Yet, we must remember that Homo sapiens
-                have walked this planet for 200,000–300,000 years, according to
-                fossil evidence. For that vast prehistoric span, we have no
-                written records, no clear window into how our ancestors lived,
-                thought, and organized themselves.
-              </p>
-
-              <p className="mb-6">
-                From 3500 BC to 2025 AD, a wide variety of religions emerged:
-              </p>
-
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-semibold mb-4">
-                  Categories of Religion
-                </h3>
-                <ol className="space-y-4">
-                  <li>
-                    <strong>Prehistoric Religions</strong>
-                    <ul className="ml-6 mt-2 space-y-1">
-                      <li>Ancient Egyptian Polytheism</li>
-                      <li>Ancient Mesopotamian Polytheism</li>
-                      <li>Indo-European Polytheism</li>
-                      <li>Indus Valley Civilization Religion</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Canaanite Religion</strong>
-                  </li>
-                  <li>
-                    <strong>Vedic Religion</strong>
-                    <ul className="ml-6 mt-2 space-y-1">
-                      <li>Brahminism → Hinduism</li>
-                      <li>Shramana Movements → Buddhism, Jainism</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Abrahamic Religions</strong>
-                    <ul className="ml-6 mt-2 space-y-1">
-                      <li>Judaism</li>
-                      <li>Christianity</li>
-                      <li>Islam</li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-
-              <p className="mb-8">
-                The sheer diversity of belief systems makes our task vastly more
-                difficult.
-              </p>
-            </section>
-
-            <section aria-labelledby="comparison-parameters">
-              <h2
-                id="comparison-parameters"
-                className="text-3xl font-bold mt-12 mb-6"
-              >
-                Comparison Parameters
-              </h2>
-              <p className="mb-6">
-                To navigate this complexity, we must establish clear, unbiased
-                comparison parameters:
-              </p>
-
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <ol className="space-y-3">
-                  <li>
-                    <strong>Belief in God</strong>
-                    <ul className="ml-6 mt-1 space-y-1">
-                      <li>Count (number of deities)</li>
-                      <li>
-                        Disparity between the actual definition of God and the
-                        religion's definition
-                      </li>
-                      <li>Claimed attributes vs. actual attributes</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Scripture</strong>
-                    <ul className="ml-6 mt-1 space-y-1">
-                      <li>Count</li>
-                      <li>Authenticity</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>Denominations</strong>
-                  </li>
-                  <li>
-                    <strong>Timeline of the religion</strong>
-                  </li>
-                  <li>
-                    <strong>
-                      Disparity between religious claims and actual history
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      Disparity between human innate needs and the ways
-                      prescribed by the religion
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>Ethical & social teachings</strong>
-                  </li>
-                  <li>
-                    <strong>Rituals</strong>
-                  </li>
-                  <li>
-                    <strong>Social institutions</strong>
-                  </li>
-                  <li>
-                    <strong>Inner experiences</strong>
-                  </li>
-                  <li>
-                    <strong>Sentiments</strong>
-                  </li>
-                  <li>
-                    <strong>Growth of religion</strong>
-                    <ul className="ml-6 mt-1 space-y-1">
-                      <li>Birth rate</li>
-                      <li>Conversion rate</li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-            </section>
-
+            {/* Linking the Anchors with Observation */}
             <aside
               className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
               role="note"
             >
               <p className="font-semibold mb-2">
-                Tool Used for Research:{" "}
-                <Link href="/" className="text-primary hover:underline">
-                  Which Religion
-                </Link>
+                Task : Pause & Ponder on The 5 Anchors of Reality
               </p>
               <p>
-                <strong>Conclusion:</strong> After an in-depth study using the
-                above parameters, we conclude that the only religion which fully
-                answers all the questions raised earlier in the "New Community"
-                scenario, and which fulfills the criteria for the attributes of
-                God without ambiguity, is Islam.
+                Pause your reading for sometime and think about each of the 5
+                anchors we discussed. How it forms the basis of your existence.
               </p>
             </aside>
-
-            <p className="mb-8">
-              We have found the religion. But the real question remains: How can
-              it solve today's problems, and how can it possibly be implemented
-              in the complex reality of 2025?
-            </p>
-
-            <section aria-labelledby="personal-commitment">
-              <h2
-                id="personal-commitment"
-                className="text-3xl font-bold mt-12 mb-6"
-              >
-                Personal Commitment
+            {/* Conculsion */}
+            <section>
+              <h2 className="text-3xl font-bold mt-12 mb-6">
+                Module 1: Conclusion
               </h2>
-              <p className="mb-8">
-                Before we continue, I want to pause for a moment and acknowledge
-                your commitment to walking this path with me. This journey is
-                not just about collecting facts; it's about confronting reality
-                — and remembering why we started in the first place.
+              <p className="mb-4">
+                Let me summarize the each of the anchor and what it posited on
+                deep research briefly:
+                <ul className="list-decimal">
+                  <li>
+                    <strong>Birth</strong>: Like yourself , everything had
+                    beginning in this Universe and even the Universe itself had
+                    a beginning.
+                  </li>
+                  <li>
+                    <strong>Death</strong>: Everything has a expiry date, you
+                    will also soon will face this extinction.
+                  </li>
+                  <li>
+                    <strong>Human Innate Dispositions</strong>: There are some
+                    common needs between all humans beings, any rulings or laws
+                    against these dispositions simply cannot work.
+                  </li>
+                  <li>
+                    <strong>Existence</strong>: On observing 'The Line of
+                    Existence', the complexity at each level and the order in
+                    the Universe, the similitude of design from a micro to macro
+                    level hints strongly the existence a single designer.
+                  </li>
+                  <li>
+                    <strong>Time</strong>: The limited nature of time, reminds
+                    everyone about the expiry date and produces
+                    <strong>Cognitive Dissonance</strong> in mind to find
+                    meaningful purpose and direction in this life.
+                  </li>
+                </ul>
               </p>
+
+              <p className="mb-4">
+                If the <strong>5 Anchors of Reality</strong> are not yet
+                self‑evident to you, pause here. Everything that follows builds
+                upon them, not as opinions, but as unavoidable facts of your own
+                reality.
+              </p>
+
+              <p className="mb-4">
+                Life across species is rich with emotion and instinct, yet only
+                humans have the ability to comprehend these 5 anchors of
+                Reality? Animals may love, protect, and grieve, but they do not
+                weigh time, consequence, and the arc of their own lives as we
+                do. But Why?
+              </p>
+
+              <p className="mb-4">
+                The capacity to observe, infer, and reason toward coherence and
+                able to differentiate between right and wrong; is what seprates
+                us from the other species.
+              </p>
+
+              <p className="mb-4 text-lg font-bold">
+                {" "}
+                These anchors are a proof to you higher intelligence and they
+                will withstand scrutiny and illuminate our path of our
+                observation.
+              </p>
+
+              <p className="mb-4">
+                Next, we will start our observation in top Down Approach,
+                starting with the observation of the current state of the World.
+              </p>
+            </section>
+
+            <p className="text-center text-3xl">. . . </p>
+            <section>
+              <h2 className="text-3xl font-bold mt-12 mb-6">
+                Module 2: Observation Begins
+              </h2>
             </section>
 
             <section aria-labelledby="the-current-state-of-affairs">
@@ -1181,6 +1376,309 @@ export default function JourneyPage() {
               </section>
             </section>
 
+            <section aria-labelledby="the-concept-of-god">
+              <h2
+                id="the-concept-of-god"
+                className="text-3xl font-bold mt-12 mb-6"
+              >
+                The Concept of God
+              </h2>
+              <p className="mb-6">
+                The idea of there being a Creator/Designer/God or Supreme Being
+                is one that has kept many people awake at night. Let's try to
+                figure out the right questions to ask before we draw any
+                conclusions.
+              </p>
+
+              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                <h3 className="text-xl font-semibold mb-4">Key Questions:</h3>
+                <ul className="space-y-3 list-decimal">
+                  <li>How did the concept of God come into existence?</li>
+                  <li>What do you mean by God?</li>
+                  <li>Do we need God to explain our existence? Why God?</li>
+                  <li>Can there be more than one God?</li>
+                  <li>
+                    Do logic, reasoning, mathematics, and science align with the
+                    concept of God, or are we going for a "God of the gaps"?
+                  </li>
+                  <li>Where is God?</li>
+                  <li>
+                    Doesn't the existence of evil negate the existence of an
+                    all-perfect God?
+                  </li>
+                  <li>What is the purpose of all this?</li>
+                </ul>
+              </div>
+
+              <aside
+                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+                role="note"
+              >
+                <p className="font-semibold mb-2">
+                  Tool:{" "}
+                  <Link
+                    href="/spiritual-journey"
+                    className="text-primary hover:underline"
+                  >
+                    Spiritual Journey
+                  </Link>
+                </p>
+
+                <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                  <ul className="space-y-3 list-decimal">
+                    <li>Design requires a designer.</li>
+                    <li>
+                      All-powerful, all-knowledgeable, ever-existing,
+                      independent, and outside of space-time.
+                    </li>
+                    <li>
+                      Yes, we need God because infinite regression does not lead
+                      to any creation.
+                    </li>
+                    <li>
+                      There is one God. Multiple gods would lead to chaos, but
+                      we see stability.And Logically, there cannot be two
+                      equally powerful entities.
+                    </li>
+                    <li>
+                      Yes, we are not appealing to a "God of the gaps." In fact,
+                      each law and each constant we find in any field of study
+                      implies the existence of a designer behind it.
+                    </li>
+                    <li>
+                      No idea. One thing is certain: since space-time is the
+                      creation of God, He is outside of it, just like a software
+                      developer doesn't live inside the software.
+                    </li>
+                    <li>
+                      To understand the existence of free will to do good and
+                      bad, the concept of good and bad, the concept of day and
+                      night, and many similar signs, we need to understand the
+                      purpose of creation. This requires further study of the
+                      current world and a search for that purpose. And, that is
+                      our next step so strap in we are going for hunting the
+                      best religion.
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </section>
+
+            <section aria-labelledby="religions">
+              <h2 id="religions" className="text-3xl font-bold mt-12 mb-6">
+                The need for Comparative study of Religions
+              </h2>
+              <p className="mb-8">
+                Now, we are at a thrilling yet daunting crossroads, forced to
+                examine the systems and religions that dominate the 21st
+                century.{" "}
+                <b>
+                  But, we now have clarity on Human Innate Dispositions, God's
+                  attributed and Oneness of God through objective unbiased
+                  research and logical reasoning.
+                </b>
+              </p>
+
+              <p className="mb-8">
+                We have one more challenge called "Cognitive Bias". The rigid
+                separation of religion and state adds layers of complexity, and
+                the modern trend of portraying religion as nothing more than
+                "backward thinking" has created a hostile climate. These
+                Cognitive Biases don't just discourage open dialogue, they
+                actively choke the oxygen needed for unbiased, honest research.
+              </p>
+
+              <p className="mb-8">
+                Still, we must proceed. First, we will explore religions
+                broadly, then compare them, and finally, take a deep dive into
+                the one that offers the most relevant and sustainable framework
+                for the world of 2025.
+              </p>
+
+              <p className="mb-8">
+                But even if we discover the "right" religion or philosophy, our
+                work doesn't end there. We will have to scour history for
+                examples of systems that were successfully woven into everyday
+                life, systems that genuinely solved the issues of chaos and are
+                inline with.
+              </p>
+              <p className="mb-8">
+                And this will not be easy, because the current global framework,
+                often referred to as the "New World Order," has been masterful
+                at burying or erasing any competing alternative before it has
+                the chance to take root. This is not just research, it's a
+                battle for truth under layers of suppression.
+              </p>
+
+              <h2
+                id="historical-context"
+                className="text-3xl font-bold mt-12 mb-6"
+              >
+                Historical Context
+              </h2>
+              <p className="mb-6">
+                After looking into human history, we find that our recorded data
+                begins around 3500 BC. Yet, we must remember that Homo sapiens
+                have walked this planet for 200,000–300,000 years, according to
+                fossil evidence. For that vast prehistoric span, we have no
+                written records, no clear window into how our ancestors lived,
+                thought, and organized themselves.
+              </p>
+
+              <p className="mb-6">
+                From 3500 BC to 2025 AD, a wide variety of religions emerged:
+              </p>
+
+              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                <h3 className="text-xl font-semibold mb-4">
+                  Categories of Religion
+                </h3>
+                <ul className="space-y-4 list-decimal">
+                  <li>
+                    <strong>Prehistoric Religions</strong>
+                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                      <li>Ancient Egyptian Polytheism</li>
+                      <li>Ancient Mesopotamian Polytheism</li>
+                      <li>Indo-European Polytheism</li>
+                      <li>Indus Valley Civilization Religion</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Canaanite Religion</strong>
+                  </li>
+                  <li>
+                    <strong>Vedic Religion</strong>
+                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                      <li>Brahminism → Hinduism</li>
+                      <li>Shramana Movements → Buddhism, Jainism</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Abrahamic Religions</strong>
+                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                      <li>Judaism</li>
+                      <li>Christianity</li>
+                      <li>Islam</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <p className="mb-8">
+                Filtering out the religions is much easier now as we have
+                clarity through logical reasoning on Definition of God,Oneness
+                of God and clear Understanding of Human Innate disposition and
+                the Line of Existence. The religions which has monthiestic
+                principles are Abrahamic religions: Judaism, Christianity and
+                Islam. Let's compare with more parameters and find out the true
+                religion.
+              </p>
+            </section>
+
+            <section aria-labelledby="comparison-parameters">
+              <h2
+                id="comparison-parameters"
+                className="text-3xl font-bold mt-12 mb-6"
+              >
+                Comparison Parameters
+              </h2>
+              <p className="mb-6">
+                To navigate this complexity, we must establish clear, unbiased
+                comparison parameters:
+              </p>
+
+              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+                <ol className="space-y-3">
+                  <li>
+                    <strong>Belief in God</strong>
+                    <ul className="ml-6 mt-1 space-y-1">
+                      <li>Count (number of deities)</li>
+                      <li>
+                        Disparity between the actual definition of God and the
+                        religion's definition
+                      </li>
+                      <li>Claimed attributes vs. actual attributes</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Scripture</strong>
+                    <ul className="ml-6 mt-1 space-y-1">
+                      <li>Count</li>
+                      <li>Authenticity</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Denominations</strong>
+                  </li>
+                  <li>
+                    <strong>Timeline of the religion</strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Disparity between religious claims and actual history
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Disparity between human innate needs and the ways
+                      prescribed by the religion
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>Ethical & social teachings</strong>
+                  </li>
+                  <li>
+                    <strong>Rituals</strong>
+                  </li>
+                  <li>
+                    <strong>Social institutions</strong>
+                  </li>
+                  <li>
+                    <strong>Inner experiences</strong>
+                  </li>
+                  <li>
+                    <strong>Sentiments</strong>
+                  </li>
+                  <li>
+                    <strong>Growth of religion</strong>
+                    <ul className="ml-6 mt-1 space-y-1">
+                      <li>Birth rate</li>
+                      <li>Conversion rate</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            <aside
+              className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+              role="note"
+            >
+              <p className="font-semibold mb-2">
+                Tool Used for Research:{" "}
+                <Link
+                  href="/comparative-studies/comparative-religion-study"
+                  className="text-primary hover:underline"
+                >
+                  Which Religion
+                </Link>
+              </p>
+              <p>
+                <strong>Conclusion:</strong> After an in-depth study using the
+                above parameters, we conclude that the only religion which fully
+                answers all the questions raised earlier in the "New Community"
+                scenario, and which fulfills the criteria for the attributes of
+                God without ambiguity, is Islam.
+              </p>
+            </aside>
+
+            <p className="mb-8">
+              We have found the religion which fulfills the criteria perfectly.
+              But the real question remains: How can it solve today's problems,
+              and how can it possibly be implemented in the complex reality of
+              2025?
+            </p>
+
             <section aria-labelledby="conclusion">
               <h2 id="conclusion" className="text-3xl font-bold mt-12 mb-6">
                 Conclusion
@@ -1220,6 +1718,23 @@ export default function JourneyPage() {
                 Thank you for joining me on this journey. I hope you have found
                 the mental peace you were looking for.
               </p>
+            </section>
+
+            <section aria-labelledby="personal-commitment">
+              <h2
+                id="personal-commitment"
+                className="text-3xl font-bold mt-12 mb-6"
+              >
+                Personal Commitment
+              </h2>
+              <p className="mb-8">
+                Before we continue, I want to pause for a moment and acknowledge
+                your commitment to walking this path with me. This journey is
+                not just about collecting facts; it's about understanding the
+                realities of the World and find your purpose in the process.
+              </p>
+
+              <p className="mb-4"></p>
             </section>
           </div>
         </div>

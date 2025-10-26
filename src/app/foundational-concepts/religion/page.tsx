@@ -85,8 +85,8 @@ const linkText = (text: string): React.ReactNode => {
     // Add the linked text
     const className =
       match.type === "religion"
-        ? "text-teal-600 hover:text-teal-800 underline font-medium"
-        : "text-purple-600 hover:text-purple-800 underline font-medium";
+        ? "text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300 underline font-medium"
+        : "text-purple-600 hover:text-purple-800 dark:text-purple-400 dark:hover:text-purple-300 underline font-medium";
 
     result.push(
       <Link
@@ -118,10 +118,10 @@ interface TimelinePeriod {
 
 function TimelineCard({ period }: { period: TimelinePeriod }) {
   return (
-    <Card className="mb-4 border-l-4 border-l-teal-500">
+    <Card className="mb-4 border-l-4 border-l-teal-500 dark:border-l-teal-400">
       <CardHeader className="pb-2">
         <div className="flex items-center gap-2">
-          <Clock className="h-4 w-4 text-teal-500" />
+          <Clock className="h-4 w-4 text-teal-500 dark:text-teal-400" />
           <CardTitle className="text-sm font-bold">{period.period}</CardTitle>
         </div>
         <Badge variant="outline" className="w-fit text-xs">
@@ -129,11 +129,13 @@ function TimelineCard({ period }: { period: TimelinePeriod }) {
         </Badge>
       </CardHeader>
       <CardContent className="pt-0">
-        <p className="text-sm text-gray-600 mb-2">{period.description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+          {period.description}
+        </p>
         <ul className="text-xs space-y-1">
           {period.events.map((event: string, index: number) => (
             <li key={index} className="flex items-start gap-1">
-              <span className="text-teal-500 mt-1">•</span>
+              <span className="text-teal-500 dark:text-teal-400 mt-1">•</span>
               <span>{event}</span>
             </li>
           ))}
@@ -151,14 +153,14 @@ function Page() {
         <div className="lg:w-2/3">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               Comparative Study of World Religions
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               Origins, Beliefs, and Demographics — An Academic Analysis for
               Interfaith Understanding
             </p>
-            <div className="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <div className="flex items-center gap-4 mt-4 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center gap-1">
                 <BookOpen className="h-4 w-4" />
                 <span>Academic Study</span>
@@ -178,11 +180,11 @@ function Page() {
 
           {/* Definition of Religion */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Definition of Religion
             </h2>
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg leading-relaxed text-gray-700 mb-4">
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                 Religion is broadly understood as a systematic set of beliefs
                 and practices involving the sacred or ultimate reality.
                 Academically, religion is defined as &ldquo;human beings&apos;
@@ -190,7 +192,7 @@ function Page() {
                 spiritual, divine, or worthy of especial reverence,&rdquo;
                 typically addressing life&apos;s ultimate concerns.
               </p>
-              <p className="text-lg leading-relaxed text-gray-700 mb-4">
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                 Emile Durkheim, a foundational sociologist, likewise defined
                 religion as &ldquo;a unified system of beliefs and practices
                 relative to sacred things… which unite…into one single moral
@@ -198,7 +200,7 @@ function Page() {
                 and rituals about the sacred (e.g. gods, spirits, ultimate
                 truth) into a communal moral framework.
               </p>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                 Most scholarly definitions emphasize four common features:
                 belief in transcendent or supernatural forces, a community of
                 practitioners, rituals or practices expressing those beliefs,
@@ -213,27 +215,27 @@ function Page() {
 
           {/* Origins and Development */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Origins and Development of Religion
             </h2>
 
             {/* Categories of Religion */}
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 Categories of Religion
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "Religions can be classified by their conception of the divine and the supernatural. Monotheism (belief in one God) characterizes Judaism, Christianity and Islam. Polytheism (belief in multiple gods) was typical of ancient Egypt, Mesopotamia, Greece, and many folk religions (e.g. Hindu traditions before philosophical Hinduism)."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "Henotheism (one god supreme among many) and pantheism/panentheism (God as world or immanent in world) appear in Hindu and some mystical traditions. Animism (ascribed souls or spirits to animals, plants and natural phenomena) is often seen as the earliest form of religion, underlying many indigenous and prehistoric practices."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   {linkText(
                     "Other categories include transtheism (gods may exist but are irrelevant, e.g. some Buddhist views), atheism (denial of any god) and agnosticism (uncertainty about gods). Religions are also categorized as organized (world) religions versus folk/tribal religions or new religious movements."
                   )}
@@ -243,22 +245,22 @@ function Page() {
 
             {/* Prehistoric and Early Religions */}
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 Prehistoric and Early Religions
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   Human religious behavior dates back to prehistoric times.
                   Archaeological evidence (e.g. ritual burials, cave art,
                   figurines) suggests proto-religious practices as far back as
                   the Middle Paleolithic (roughly 100,000 years ago).
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "The oldest known burials (Middle Paleolithic) included grave offerings (stone tools, animal parts) arranged with the deceased, implying a rudimentary belief in an afterlife or spirit world. Such burials, plus objects like Venus figurines and decorated caves, suggest animistic or fertility cult practices among hunter-gatherers."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   In the Neolithic (10,000–4,000 BCE) emerging agricultural
                   societies developed more complex rituals (sacred feasting,
                   ancestor reverence, earth-mother worship). These early
@@ -272,46 +274,46 @@ function Page() {
 
           {/* Deep Dive on Major Belief Systems */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Deep Dive on Major Belief Systems
             </h2>
 
             {/* Islam */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <Link
                   href="/major-religions/islam"
-                  className="text-teal-600 hover:text-teal-800 underline"
+                  className="text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300 underline"
                 >
                   Islam
                 </Link>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Origin & Founder:</strong>{" "}
                   {linkText(
                     "Islam was founded by the Prophet Muḥammad (570–632 CE) in Mecca (Hejaz, Arabia). According to tradition, at age 40 Muhammad began receiving God's revelations, which he preached publicly until his death. Muslims regard him as the last prophet in a line with Abraham, Moses, Jesus, etc."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Timeline:</strong> 610 CE (first revelation) through
                   632 CE (Muhammad&apos;s death). After 632, Islam expanded
                   under the Rashidun, Umayyad and Abbasid caliphates.
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Core Doctrines:</strong>{" "}
                   {linkText(
                     "Islam is strictly monotheistic (tawḥīd): belief in one God (Allah). The Qur'an teaches that Allah is omnipotent, just and merciful; He communicates through prophets. The Articles of Faith include belief in angels, divine scriptures (Qur'an as final scripture), prophets (Muḥammad as Seal of the Prophets), the Day of Judgment, and divine decree (predestination)."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   Five pillars structure practice: the profession of faith
                   (shahāda), five daily prayers (ṣalāh), almsgiving (zakāt),
                   fasting during Ramadan (sawm), and pilgrimage to Mecca (ḥajj).
                   Ethical teachings emphasize compassion, social justice,
                   charity, and obedience to God.
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Global Distribution:</strong> Islam is one of the
                   world&apos;s largest religions, with roughly{" "}
                   <strong>1.8–2.0 billion</strong> adherents worldwide (about
@@ -325,28 +327,28 @@ function Page() {
 
             {/* Christianity */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <Link
                   href="/major-religions/christianity"
-                  className="text-teal-600 hover:text-teal-800 underline"
+                  className="text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300 underline"
                 >
                   Christianity
                 </Link>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Origin & Founder:</strong>{" "}
                   {linkText(
                     "Christianity was founded on the life and teachings of Jesus of Nazareth (c.4 BCE–30 CE), a Jewish preacher in Roman Palestine. Christians believe Jesus to be the Messiah and Son of God. He did not leave a written scripture, but his apostles and followers produced the New Testament."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Core Doctrines:</strong>{" "}
                   {linkText(
                     "Christianity is monotheistic but uniquely Trinitarian: God is one Being in three Persons (Father, Son, Holy Spirit). Key doctrines include the Incarnation (God becoming man in Jesus), atonement (Jesus' sacrificial death redeeming sin), and resurrection (Jesus' victory over death)."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Denominations:</strong> Today Christianity is the
                   world&apos;s largest religion (≈2.3 billion, ~28–30% of world
                   population). It has three major branches:{" "}
@@ -355,7 +357,7 @@ function Page() {
                   <strong>Protestantism</strong> (diverse movements that broke
                   from Catholicism from the 16th century onward).
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Global Distribution:</strong> Christianity has ~2.3
                   billion adherents (≈29% of world population). Historically
                   centered in Europe, today its largest populations are in the
@@ -366,28 +368,28 @@ function Page() {
 
             {/* Hinduism */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <p>Hinduism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Origin & Founder:</strong>{" "}
                   {linkText(
                     "Hinduism has no single founder or starting point. It grew organically in the Indian subcontinent from the convergence of Indus Valley traditions and Aryan Vedic religion. Its history is usually divided into Vedic (rigid sacrificial Brahmanism) and classical/post-Vedic phases."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Core Doctrines:</strong>{" "}
                   {linkText(
                     "Hinduism encompasses diverse beliefs but has key concepts: Dharma (moral duty/ethics), Karma (action and its consequences), Samsara (cycle of rebirth), and Moksha (liberation from the cycle). The ultimate reality is Brahman (absolute ground of being), experienced as a personal god or impersonal oneness."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "Hindus may be polytheistic (worshiping many deities) or more philosophically monist/henotheist (seeing all gods as aspects of Brahman). The concept of atman (individual soul) as identical with Brahman is central in many schools."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Global Distribution:</strong>{" "}
                   {linkText(
                     "Hinduism has about 1.2 billion followers (roughly 15% of world population). It is overwhelmingly concentrated in South Asia: about 80% of Indians are Hindus, and Nepal also has a Hindu majority."
@@ -398,28 +400,28 @@ function Page() {
 
             {/* Buddhism */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <p>Buddhism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Origin & Founder:</strong>{" "}
                   {linkText(
                     "Buddhism was founded by Siddhartha Gautama (the Buddha) in northeastern India. Gautama was born a prince (c. 563 BCE) who renounced worldly life, attained enlightenment, and taught for 45 years."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Core Doctrines:</strong>{" "}
                   {linkText(
                     "Buddhism is fundamentally non-theistic (no creator God). Its main teachings are the Four Noble Truths: (1) life involves suffering (dukkha); (2) suffering is caused by attachment and ignorance; (3) there is an end to suffering (nirvana); and (4) the Eightfold Path leads to that end."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "Karma (action) and rebirth operate without a permanent soul (anatta doctrine). Ethical teachings stress compassion (karuṇā), loving-kindness (mettā), and the Middle Way between indulgence and extreme asceticism."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Global Distribution:</strong>{" "}
                   {linkText(
                     "Buddhism has roughly 500 million followers (~6–7% of global population). Major concentrations are in East Asia (China, Japan, Korea) and Southeast Asia (Thailand, Myanmar, Vietnam)."
@@ -430,33 +432,33 @@ function Page() {
 
             {/* Judaism */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <Link
                   href="/major-religions/judaism"
-                  className="text-teal-600 hover:text-teal-800 underline"
+                  className="text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300 underline"
                 >
                   Judaism
                 </Link>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Origin & Founder:</strong>{" "}
                   {linkText(
                     "Judaism originated with the ancient Hebrews/Israelites. It does not have a single historical founder in the way Christianity or Islam does, but key figures include Abraham (progenitor of the Jewish people, ca. 1800–1600 BCE) and Moses (13th c. BCE, who received the Torah)."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Core Doctrines:</strong>{" "}
                   {linkText(
                     "Judaism is strictly monotheistic: belief in one, indivisible God (Yahweh/El). God is Creator and Lawgiver. The covenant with the Israelites (chosen people) is central: God gave the Torah (law) to Israel, and Israel agreed to live by it."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   {linkText(
                     "Unlike Christianity, Judaism denies the divinity of any human (Jesus was a prophet/teacher, not God) and awaits a future Messiah."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Global Distribution:</strong> There are about{" "}
                   <strong>15 million</strong> Jews worldwide (≈0.2% of people).
                   Over 80% live in just two countries: <strong>Israel</strong>{" "}
@@ -469,17 +471,17 @@ function Page() {
 
             {/* Atheism and Agnosticism */}
             <div className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                 <p>Atheism</p> and <p>Agnosticism</p>
               </h3>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Definitions:</strong>{" "}
                   {linkText(
                     "Atheism and agnosticism are not religions but worldviews about theism. Atheism is the absence of belief in any god or gods. Agnosticism is the position that the existence of gods is unknown or unknowable."
                   )}
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Historical Origins:</strong> Skeptical or non-theistic
                   thought can be traced to antiquity (e.g. Greek atomists, some
                   Indian materialists). The modern use of &ldquo;atheist&rdquo;
@@ -487,7 +489,7 @@ function Page() {
                   (18th–19th centuries) with figures like Baron d&apos;Holbach
                   and Thomas Huxley.
                 </p>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   <strong>Demographics:</strong> The Pew Research Center
                   estimates that about <strong>24%</strong> of the world&apos;s
                   population (~1.9 billion) is <em>religiously unaffiliated</em>
@@ -501,15 +503,15 @@ function Page() {
 
           {/* References */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               References
             </h2>
             <div className="prose prose-lg max-w-none">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-sm text-gray-600 mb-2">
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                   <strong>Academic Sources:</strong>
                 </p>
-                <ul className="text-sm text-gray-600 space-y-1">
+                <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
                   <li>
                     • Encyclopædia Britannica. Religion and Religious Studies
                     entries.
@@ -543,7 +545,7 @@ function Page() {
             <Card className="mb-6">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-teal-600" />
+                  <Clock className="h-5 w-5 text-teal-600 dark:text-teal-400" />
                   Religion Timeline
                 </CardTitle>
               </CardHeader>
