@@ -11,6 +11,15 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: underline;
+  color: #3e6266;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

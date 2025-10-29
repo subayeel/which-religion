@@ -112,11 +112,11 @@ export default function JourneyPage() {
               </h1>
 
               <p className="mb-8">
-                In this journey, we are are going for observation on every
-                level. And of course, for every observation to take place we
-                need a point of reference. In this journey, these points of
-                reference should be an objective so that a human from every
-                corner of the world can resonate with it.
+                In this journey, we are going for observation on every level.
+                And, of course, for every observation to take place, we need a
+                point of reference. In this journey, these points of reference
+                should be objective so that a human from every corner of the
+                world can resonate with it.
               </p>
               <p>
                 And those anchors which will always keep your mindset grounded
@@ -137,7 +137,7 @@ export default function JourneyPage() {
                 </li>
                 <li>
                   <strong>Existence:</strong> You exist in this world, others
-                  also exist, this is not an illusion. Your intentions,actions
+                  also exist, this is not an illusion. Your intentions, actions,
                   and goals have consequences.
                 </li>
                 <li>
@@ -162,7 +162,7 @@ export default function JourneyPage() {
                 The objective from here onwards will be finding navigation in
                 this life. The sailor will use stars at night to navigate and
                 the Sun's movement during the day, but the question is{" "}
-                <span className="text-xl font-semibold text-primary">
+                <span className="text-xl font-semibold ">
                   what are you going to look towards to find meaning, structure,
                   and purpose in your life?
                 </span>
@@ -185,12 +185,12 @@ export default function JourneyPage() {
             </section>
             {/* Human Innate Dispositions */}
             <section aria-labelledby="human-innate-dispositions">
-              <h1
-                className="text-2xl font-bold mt-12 mb-6"
+              <h2
+                className="text-xl font-bold mt-12 mb-6"
                 id="human-innate-dispositions"
               >
-                1. Human Innate Dispositions
-              </h1>
+                1.1 Human Innate Dispositions
+              </h2>
               <p className="text-muted-foreground mb-8">
                 There are around 8 billion people in the world, including you.
                 Everyone has their own goals and objectives in life, but these
@@ -205,15 +205,16 @@ export default function JourneyPage() {
                 professional life, these are universal feelings.
               </p>
 
-              <h2 className="text-xl font-bold mt-12 mb-6">
-                1.1 Maslow's Hierarchy of Needs
-              </h2>
+              <h3 className="text-xl font-bold mt-12 mb-6">
+                1.1.1 Maslow's Hierarchy of Needs
+              </h3>
               <p className="mb-6">
-                I would like to refer to research of Maslow's hierarchy of needs
-                when it comes down the needs of a human on personal level.
+                I would like to refer to the research of Maslow's hierarchy of
+                needs when it comes down to the needs of a human on a personal
+                level.
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+              <div className="bg-muted/30 rounded-lg mb-8">
                 <h3 className="text-xl font-semibold mb-4">The Five Levels:</h3>
                 <ol className="space-y-4">
                   <li className="flex gap-4">
@@ -289,7 +290,7 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                <strong>Cognitive dissonance</strong> plays a major role here
+                <strong>Cognitive dissonance</strong> plays a major role here:
                 the discomfort felt when beliefs, identity, or group loyalty
                 conflict with evidence or lived experience, pushing individuals
                 and communities to rationalize existing norms and resist change.
@@ -302,8 +303,8 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                <strong>Time </strong>solidifies this beliefs which were built
-                on weak foundations This belief continues for generations. A
+                <strong>Time</strong> solidifies these beliefs which were built
+                on weak foundations. This belief continues for generations. A
                 child follows the path of the parent, and the biases instilled
                 in the child's mind become so deeply rooted that it becomes
                 almost impossible for them to question their inherited way of
@@ -336,7 +337,8 @@ export default function JourneyPage() {
                   <strong> What breaks this loop?</strong>
                   <br />A system that eliminates <b>subjective morality</b>,
                   leaves no room for <b>Cognitive Dissonance</b>, and governs
-                  the <b>Line of Existence</b> at level where there is chaos.
+                  the <b>Line of Existence</b> at the level where there is
+                  chaos.
                 </p>
               </aside>
 
@@ -344,7 +346,7 @@ export default function JourneyPage() {
                 id="the-central-question"
                 className="text-xl font-bold mt-12 mb-6"
               >
-                1.2 The Central Question
+                1.1.2 The Central Question
               </h2>
               <p className="mb-4">
                 On Human level this is the central question:
@@ -377,7 +379,7 @@ export default function JourneyPage() {
 
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-xl font-bold mb-8 text-foreground">
-                  1.3 Exploring Constitutional Solutions
+                  1.1.3 Exploring Constitutional Solutions
                 </h2>
 
                 <div className="space-y-8">
@@ -454,7 +456,7 @@ export default function JourneyPage() {
                 {/* Conclusion */}
                 <div className="mt-12 bg-muted/50 rounded-lg">
                   <h2 className="text-xl font-bold mb-6 text-foreground">
-                    1.4 Conclusion: Human Innate Dispositions
+                    1.1.4 Conclusion: Human Innate Dispositions
                   </h2>
                   <div className="prose prose-lg max-w-none">
                     <p className="text-muted-foreground leading-relaxed mb-4">
@@ -468,7 +470,7 @@ export default function JourneyPage() {
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       The human innate disposition craves{" "}
                       <strong>peace and stability</strong> above all else. This
-                      universal longing manifests in our desire for:
+                      universal longing manifests itself in our desire for:
                     </p>
                     <ul className="list-disc pl-6 mb-4 text-muted-foreground space-y-2">
                       <li>Harmony in relationships and communities</li>
@@ -494,9 +496,9 @@ export default function JourneyPage() {
             <section aria-labelledby="the-line-of-existence">
               <h2
                 id="the-line-of-existence"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-2xl font-bold mt-12 mb-6"
               >
-                2. Existence
+                1.2 Existence
               </h2>
 
               <p className="mb-8">
@@ -509,7 +511,7 @@ export default function JourneyPage() {
               </p>
 
               <h3 className="text-xl font-semibold mb-4">
-                2.1 The Scientific Test of Existence
+                1.2.1 The Scientific Test of Existence
               </h3>
 
               <p className="mb-6">
@@ -569,7 +571,7 @@ export default function JourneyPage() {
               </div>
 
               <h3 className="text-xl font-semibold mb-4">
-                2.2 Why the Matrix Doesn't Matter
+                1.2.2 Why the Matrix Doesn't Matter
               </h3>
 
               <p className="mb-4">Here's the practical truth:</p>
@@ -599,7 +601,7 @@ export default function JourneyPage() {
               </div>
 
               <div className="bg-green-50 dark:bg-green-950/20 border-l-4 border-green-500 p-4 mb-8">
-                <p className="font-semibold text-green-800 dark:text-green-200">
+                <p className=" text-green-800 dark:text-green-200">
                   <strong>
                     Your existence is defined by the consequences of your
                     choices.
@@ -612,8 +614,9 @@ export default function JourneyPage() {
               </div>
 
               <p className="mb-6">
-                For easier and quicker understanding, let's print a line that
-                summarizes the structure of our existence:
+                For easier and quicker understanding, let's print{" "}
+                <strong>The line of Existence</strong> that summarizes the
+                structure of our existence:
               </p>
 
               <div className="bg-muted/30 rounded-lg p-6 mb-8">
@@ -688,27 +691,27 @@ export default function JourneyPage() {
             <section aria-labelledby="time">
               <h2
                 id="the-concept-of-god"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-2xl font-bold mt-12 mb-6"
               >
-                3. Time
+                1.3 Time
               </h2>
 
               <p className="mb-4">
                 Time is one of the most profound anchors of existence. Though
-                modern science have revealed the relativistic nature of time,
+                modern science has revealed the relativistic nature of time,
                 showing that it bends and shifts under the laws of physics, this
                 should not diminish its significance in human life.
               </p>
 
-              <h3 className="text-xl font-bold mb-2">3.2 Concepts of Time</h3>
+              <h3 className="text-xl font-bold mb-2">1.3.1 Concepts of Time</h3>
 
               <p className="mb-4">
-                Lets clarify some concepts of time to avoid any confusion about
-                Direction of time:
+                Let's clarify some concepts of time to avoid any confusion about
+                the direction of time:
                 <ul className="list-disc ml-8">
                   <li>
                     {" "}
-                    <strong>What is time, exactly;</strong> Physicists define
+                    <strong>What is time, exactly:</strong> Physicists define
                     time as the progression of events from the past to the
                     present into the future. Basically, if a system is
                     unchanging, it is timeless. Time can be considered to be the
@@ -718,7 +721,7 @@ export default function JourneyPage() {
                   </li>
                   <li>
                     {" "}
-                    <strong>Time Dilation; </strong> a concept where the time
+                    <strong>Time Dilation:</strong> A concept where the time
                     between events becomes longer (dilated) the closer one
                     travels to the speed of light. Moving clocks run more slowly
                     than stationary clocks, with the effect becoming more
@@ -726,38 +729,40 @@ export default function JourneyPage() {
                   </li>
 
                   <li>
-                    <strong>Arrow of time; </strong>
-                    physics equations work equally well whether time is moving
-                    forward into the future (positive time) or backward into the
-                    past (negative time.) However, time in the natural world has
-                    one direction, called the arrow of time.
+                    <strong>Arrow of Time:</strong> Physics equations work
+                    equally well whether time is moving forward into the future
+                    (positive time) or backward into the past (negative time).
+                    However, time in the natural world has one direction, called
+                    the arrow of time.
                   </li>
                 </ul>
               </p>
 
               <h3 className="text-xl font-bold mb-2">
-                3.3 Your relationship with Time
+                1.3.2 Your relationship with Time
               </h3>
               <p className="mb-4">
-                Its been 13.5 billion years since <strong>The Big Bang</strong>.
-                The process of life began around 4.3 billion years ago but the
-                Human race(Homo Sapiens) are estimated to have been here for
-                last 300,000 years. As per the condition of sun, after 1 billion
-                years it would become a gas giant making the earth un habitable.
+                It's been 13.5 billion years since <strong>The Big Bang</strong>
+                . The process of life began around 4.3 billion years ago, but
+                the human race (Homo Sapiens) is estimated to have been here for
+                the last 300,000 years. As per the condition of the sun, after 1
+                billion years, it would become a gas giant, making the earth
+                uninhabitable.
               </p>
 
               <p className="mb-4">
-                Above mentioned facts might not matter to you as a human being
-                but the following facts are definitely important to consider:
+                The above-mentioned facts might not matter to you as a human
+                being, but the following facts are definitely important to
+                consider:
                 <ul className="list-decimal ml-8">
-                  <li>Average life span of human being is 60.</li>
+                  <li>The average life span of a human being is 60.</li>
                   <li>
                     Your time began on this earth with the first heartbeat, when
                     you were inside your mother's womb.
                   </li>
                   <li>
-                    You hear never rests, it beats around ~100,000 times in a
-                    single day. Each Heart beat of yours is a sign that the end
+                    Your heart never rests; it beats around ~100,000 times in a
+                    single day. Each heartbeat of yours is a sign that the end
                     is nearing.
                   </li>
                   <li>
@@ -785,38 +790,37 @@ export default function JourneyPage() {
                 anchors we discussed. How it forms the basis of your existence.
               </p>
             </aside>
-            {/* Conculsion */}
+            {/* Module 1: Conculsion */}
             <section>
-              <h2 className="text-3xl font-bold mt-12 mb-6">
-                Module 1: Conclusion
-              </h2>
+              <h2 className="text-xl font-bold mt-12 mb-6">1.4 Conclusion</h2>
               <p className="mb-4">
-                Let me summarize the each of the anchor and what it posited on
+                Let me summarize each of the anchors and what it posited upon
                 deep research briefly:
-                <ul className="list-decimal">
+                <ul className="list-decimal ml-8 mt-4">
                   <li>
-                    <strong>Birth</strong>: Like yourself , everything had
-                    beginning in this Universe and even the Universe itself had
+                    <strong>Birth</strong>: Like yourself, everything had a
+                    beginning in this Universe, and even the Universe itself had
                     a beginning.
                   </li>
                   <li>
-                    <strong>Death</strong>: Everything has a expiry date, you
-                    will also soon will face this extinction.
+                    <strong>Death</strong>: Everything has an expiry date; you
+                    will also soon face this extinction.
                   </li>
                   <li>
                     <strong>Human Innate Dispositions</strong>: There are some
-                    common needs between all humans beings, any rulings or laws
-                    against these dispositions simply cannot work.
+                    common needs among all human beings; any rulings or laws
+                    against these dispositions simply cannot work. The need for
+                    Objective Morality is felt very deeply.
                   </li>
                   <li>
                     <strong>Existence</strong>: On observing 'The Line of
                     Existence', the complexity at each level and the order in
                     the Universe, the similitude of design from a micro to macro
-                    level hints strongly the existence a single designer.
+                    level strongly hints at the existence of a single designer.
                   </li>
                   <li>
                     <strong>Time</strong>: The limited nature of time, reminds
-                    everyone about the expiry date and produces
+                    everyone about the expiry date and produces{" "}
                     <strong>Cognitive Dissonance</strong> in mind to find
                     meaningful purpose and direction in this life.
                   </li>
@@ -825,35 +829,35 @@ export default function JourneyPage() {
 
               <p className="mb-4">
                 If the <strong>5 Anchors of Reality</strong> are not yet
-                self‑evident to you, pause here. Everything that follows builds
-                upon them, not as opinions, but as unavoidable facts of your own
+                self-evident to you, pause here. Everything that follows builds
+                upon them, not as opinions but as unavoidable facts of your own
                 reality.
               </p>
 
               <p className="mb-4">
                 Life across species is rich with emotion and instinct, yet only
                 humans have the ability to comprehend these 5 anchors of
-                Reality? Animals may love, protect, and grieve, but they do not
+                Reality. Animals may love, protect, and grieve, but they do not
                 weigh time, consequence, and the arc of their own lives as we
-                do. But Why?
+                do. But why?
               </p>
 
               <p className="mb-4">
                 The capacity to observe, infer, and reason toward coherence and
-                able to differentiate between right and wrong; is what seprates
-                us from the other species.
+                the ability to differentiate between right and wrong is what
+                separates us from other species.
               </p>
 
               <p className="mb-4 text-lg font-bold">
                 {" "}
-                These anchors are a proof to you higher intelligence and they
-                will withstand scrutiny and illuminate our path of our
+                These anchors are proof of your higher intelligence, and they
+                will withstand scrutiny and illuminate the path of our
                 observation.
               </p>
 
               <p className="mb-4">
-                Next, we will start our observation in top Down Approach,
-                starting with the observation of the current state of the World.
+                Next, we will start our observation using a Top-Down Approach,
+                starting with the observation of the current state of the world.
               </p>
             </section>
 
@@ -862,18 +866,35 @@ export default function JourneyPage() {
               <h2 className="text-3xl font-bold mt-12 mb-6">
                 Module 2: Observation Begins
               </h2>
+
+              <p className="mb-4">
+                We will observe the world keeping{" "}
+                <strong>The anchors of Reality</strong> in mind. We have
+                following levels to cover:
+                <ul className="list-decimal ml-8">
+                  <li>
+                    <strong>Level One</strong>: The current State of Affairs
+                  </li>
+                  <li>
+                    <strong>Level Two</strong>: The New World rises
+                  </li>
+                  <li>
+                    <strong>Level Three</strong>: The root of the "order"
+                  </li>
+                </ul>
+              </p>
             </section>
 
             <section aria-labelledby="the-current-state-of-affairs">
               <h2
                 id="the-current-state-of-affairs"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-2xl font-bold mt-12 mb-6"
               >
-                The Current State of Affairs
+                2.1 The Current State of Affairs
               </h2>
               <p className="mb-8">
                 We are witnessing the cracks of the "New World Order" in 2025.
-                It is failing at the most fundamental level — meeting the basic
+                It is failing at the most fundamental level: meeting the basic
                 physiological needs of human beings. Inflation is pushing
                 millions into poverty.
               </p>
@@ -920,7 +941,7 @@ export default function JourneyPage() {
               </aside>
 
               <p className="mb-8">
-                The so-called leaders, presidents, prime ministers, ministers,
+                The so-called leaders—presidents, prime ministers, ministers—
                 are pawns in a much larger game. Many of them may not even
                 understand who the real players are. But one truth is certain:
                 illusions don't last forever. When they fall, the truth will
@@ -949,14 +970,14 @@ export default function JourneyPage() {
             <section aria-labelledby="the-rise-of-the-new-world-order">
               <h2
                 id="the-rise-of-the-new-world-order"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-xl font-bold mt-12 mb-6"
               >
-                The Rise of the New World Order
+                2.2 New World Order rises
               </h2>
               <p className="mb-8">
-                Looking back over the last two millennia, humanity witnessed
-                staggering developments, technology, governance systems,
-                medicine, political structures, industrial growth, and deeper
+                Looking back over the last two millennia, humanity has witnessed
+                staggering developments: technology, governance systems,
+                medicine, political structures, industrial growth, and a deeper
                 understanding of the natural world through biology, chemistry,
                 physics, and mathematics.
               </p>
@@ -998,7 +1019,7 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                These factors undeniably improved life, better health, political
+                These factors undeniably improved life: better health, political
                 stability, organized governance, and technological abundance.
                 Yet, success came with its own trap: the population boom. Longer
                 lifespans and fewer conflicts swelled human numbers, demanding
@@ -1012,7 +1033,7 @@ export default function JourneyPage() {
                 innovation:
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
+              <div className="bg-muted/30 rounded-lg mb-8">
                 <ul className="space-y-3 list-disc list-outside">
                   <li>Discovery of oil in the Middle East</li>
                   <li>
@@ -1041,8 +1062,8 @@ export default function JourneyPage() {
                   </li>
                   <li>
                     Destabilization of the Middle East to control oil flows,
-                    often via puppet governments or "liberation" campaigns,
-                    Reputation threats
+                    often via puppet governments or "liberation" campaigns and
+                    reputation threats
                   </li>
                   <li>
                     Mass social engineering of women and girls through media and
@@ -1054,7 +1075,7 @@ export default function JourneyPage() {
               <p className="mb-8">
                 These were not isolated events. Together, they shaped a global
                 order designed to centralize control, limit alternatives, and
-                mold public thought, a challenge any new framework must face
+                mold public thought—a challenge any new framework must face
                 head-on if it is to take root in our era.
               </p>
             </section>
@@ -1064,7 +1085,7 @@ export default function JourneyPage() {
               role="note"
             >
               <p className="font-semibold mb-2">
-                Tool Used for Research:{" "}
+                Tool Used for Research:
                 <Link
                   href="https://project-vision-bay.vercel.app/"
                   className="text-primary hover:underline"
@@ -1072,22 +1093,27 @@ export default function JourneyPage() {
                   Project Vision
                 </Link>
               </p>
-              <p>
+              <p className="mb-4">
                 <strong>Conclusion:</strong> After an in-depth study of the
                 current state of affairs, we conclude that the current system is
                 especially design to keep you in the state of ignorance and
-                exploit you with their own agenda. Now, we have an understanding
-                of how exactly we reached this state of affairs.
+                exploit you with their own agenda.
               </p>
-            </aside>
 
-            <section aria-labelledby="current-state-of-affairs">
-              <p className="mb-8">
+              <p className="mb-4">
                 The above tool (Project Vision) provides clarity on how the New
                 World Order has infiltrated every level of human life from the
                 personal to the international.
               </p>
+            </aside>
 
+            <section aria-labelledby="current-state-of-affairs">
+              <h2
+                id="the-rise-of-the-new-world-order"
+                className="text-xl font-bold mt-12 mb-6"
+              >
+                2.3 The Roots of the "Order"
+              </h2>
               <p className="mb-8">
                 This integration is carefully designed to prevent rebellion.
                 Rebellion and revolt are inevitable whenever a system collides
@@ -1105,14 +1131,14 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                Drugs, cigarettes, intoxicants and prostitution are spread
+                Drugs, cigarettes, intoxicants, and prostitution are spread
                 widely to keep the youth distracted.
               </p>
 
               <p className="mb-8">
-                The dollar based economy has created a new reality called
-                Inflation which reshapes global power dynamics, concentrates
-                wealth in the United States and helps it maintain hegemony.
+                The dollar-based economy has created a new reality called
+                inflation, which reshapes global power dynamics, concentrates
+                wealth in the United States, and helps it maintain hegemony.
               </p>
 
               <p className="mb-8">
@@ -1124,52 +1150,50 @@ export default function JourneyPage() {
 
               <p className="mb-8">
                 Teenagers are exploited through romance, gaming, intoxicants,
-                cigarettes and material desires. They are then trapped with
-                student loans.
+                entertainment shows, cigarettes, and material desires. They are
+                then trapped with student loans.
               </p>
 
               <p className="mb-8">
                 Young adults in their twenties are brainwashed, pushed into
-                pointless politics, gender confusion and endless debates, while
-                their energy is drained by nine to five jobs as they pay off
+                pointless politics, gender confusion, and endless debates, while
+                their energy is drained by nine-to-five jobs as they pay off
                 student loans.
               </p>
 
               <p className="mb-8">
                 Adults in their thirties remain occupied with politics,
                 mortgages, fragile marriages, anxiety over their children's
-                future, and the noise of governments playing musical chairs.
-                They dream of retirement while being consumed by worry.
+                future, and the noise of governments playing a game of musical
+                chairs. They dream of retirement while being consumed by worry.
               </p>
 
               <p className="mb-8">
-                After forty, health problems begin, energy declines and the
+                After forty, health problems begin, energy declines, and the
                 ability to do anything meaningful in life fades.
               </p>
 
               <section aria-labelledby="family">
-                <h3 id="family" className="text-2xl font-bold mt-12 mb-6">
-                  Family
+                <h3 id="family" className="text-xl font-bold mt-12 mb-2">
+                  2.3.1 Family
                 </h3>
 
-                <blockquote className="border-l-4 border-primary pl-6 py-4 my-8 bg-muted/30 rounded-r-lg">
-                  <p className="text-2xl font-semibold text-foreground mb-4">
-                    "The family system has collapsed. The framework of marriage
-                    is disintegrating, and household power dynamics are chaotic
-                    under the narrative that men and women are the same."
-                  </p>
-                </blockquote>
+                <p className="mb-4">
+                  The family system has collapsed. The framework of marriage is
+                  disintegrating, and household power dynamics are chaotic under
+                  the narrative that men and women are the same.
+                </p>
 
                 <p className="mb-8">
                   The breakdown of natural gender roles contradicts human
-                  nature, weakens marriages and neglects the well being of
+                  nature, weakens marriages, and neglects the well-being of
                   children.
                 </p>
               </section>
 
               <section aria-labelledby="community">
-                <h3 id="community" className="text-2xl font-bold mt-12 mb-6">
-                  Community
+                <h3 id="community" className="text-xl font-bold mt-12 mb-2">
+                  2.3.2 Community
                 </h3>
 
                 <p className="mb-8">
@@ -1179,29 +1203,29 @@ export default function JourneyPage() {
                   polarized media and mistrust have destroyed social bonds.
                 </p>
 
-                <p className="mb-6">Key issues include:</p>
+                <p>Key issues include:</p>
 
                 <div className="bg-muted/30 rounded-lg p-6 mb-8">
                   <ol className="space-y-3 list-decimal list-outside">
                     <li>
                       Housing stress and rising homelessness caused by inflation
-                      after abandoning the gold based currency
+                      after abandoning the gold-based currency
                     </li>
                     <li>
                       Loneliness and isolation caused by the illusion of love in
-                      movies leading to shallow relationships, emotional
-                      baggage, delayed marriages and unrealistic expectations
+                      movies, leading to shallow relationships, emotional
+                      baggage, delayed marriages, and unrealistic expectations
                     </li>
                     <li>
-                      Misinformation, polarization and eroded trust driven by
-                      corrupt leaders to keep people numb combined with poor
+                      Misinformation, polarization, and eroded trust driven by
+                      corrupt leaders to keep people numb, combined with poor
                       education and the collapse of objective morality
                     </li>
                     <li>
                       Substance abuse and poor health access caused by weak
-                      government regulation, lack of family support and the open
-                      availability of addictive substances such as vaping,
-                      hookah and cigarettes that escalate to stronger drugs
+                      government regulation, lack of family support, and the
+                      open availability of addictive substances such as vaping,
+                      hookah, and cigarettes that escalate to stronger drugs
                     </li>
                     <li>Increased promiscuity</li>
                     <li>Failed marriages</li>
@@ -1215,21 +1239,21 @@ export default function JourneyPage() {
               </section>
 
               <section aria-labelledby="country">
-                <h3 id="country" className="text-2xl font-bold mt-12 mb-6">
-                  Country
+                <h3 id="country" className="text-xl font-bold mt-12 mb-2">
+                  2.3.3 Country
                 </h3>
 
                 <p className="mb-8">
                   There are nearly 198 countries, most of whose borders were
-                  drawn by the British Empire to sow future conflict. In 2025
-                  the consequences of this divide and rule policy are clearer
+                  drawn by the British Empire to sow future conflict. In 2025,
+                  the consequences of this divide-and-rule policy are clearer
                   than ever.
                 </p>
 
                 <p className="mb-8">
-                  But the question remains. If rulers know that these borders
+                  But the question remains: If rulers know that these borders
                   are artificial, why do they not erase them, unite with
-                  neighboring nations and eliminate animosity?
+                  neighboring nations, and eliminate animosity?
                 </p>
 
                 <p className="mb-8">
@@ -1242,12 +1266,12 @@ export default function JourneyPage() {
                   <p className="text-2xl font-semibold text-foreground mb-4">
                     "The fear of the large elephant keeps countries divided.
                     Wars rage on, nations collapse, yet two groups benefit the
-                    most:"
+                    most: arms dealers and the banks."
                   </p>
                 </blockquote>
 
                 <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                  <ol className="space-y-3 list-decimal list-outside">
+                  <ol className="list-decimal list-outside">
                     <li>The arms dealers who profit from selling defense</li>
                     <li>The banks that fund both sides of the war</li>
                   </ol>
@@ -1263,12 +1287,12 @@ export default function JourneyPage() {
                   Globalization further cements borders, making survival
                   impossible outside the banking system built on usury. Trade
                   and stability depend on strong borders. Meanwhile, nations
-                  experiment with democracy, monarchy and communism but all are
-                  deteriorating.
+                  experiment with democracy, monarchy, and communism, but all
+                  are deteriorating.
                 </p>
 
                 <p className="mb-8">
-                  After the world wars international organizations were formed
+                  After the world wars, international organizations were formed
                   to prevent further atrocities, yet they failed. The only true
                   deterrent to war became nuclear weapons.
                 </p>
@@ -1276,245 +1300,140 @@ export default function JourneyPage() {
                 <blockquote className="border-l-4 border-destructive pl-6 py-4 my-8 bg-destructive/10 rounded-r-lg">
                   <p className="text-2xl font-semibold text-foreground mb-4">
                     "Compound interest has enslaved entire nations. The world is
-                    being pushed towards tyrannical-One World Order and the
+                    being pushed towards a tyrannical One World Order, and the
                     transition will be chaotic. Civil wars will erupt. With
-                    current geopolitics the Great Chaos is imminent."
+                    current geopolitics, the Great Chaos is imminent."
                   </p>
                 </blockquote>
 
                 <p className="mb-8">Coming events cast their shadows before.</p>
 
                 <p className="mb-8">
-                  In 2025 those shadows are dark and visible at every level.
+                  In 2025, those shadows are dark and visible at every level.
                 </p>
               </section>
 
-              <section aria-labelledby="what-must-be-done">
-                <h3
-                  id="what-must-be-done"
-                  className="text-2xl font-bold mt-12 mb-6"
-                >
-                  What Must Be Done
-                </h3>
-
-                <p className="mb-8">
-                  Challenging the elites of this New World Order may not be
-                  within our power. But we must be aware of the dangers ahead
-                  and refuse to fuel their fire.
-                </p>
-
-                <p className="mb-8">So, what should we do?</p>
-
-                <div className="bg-muted/30 rounded-lg p-6">
-                  <ul className="space-y-3 list-decimal list-outside">
-                    <li>Work on yourself</li>
-                    <li>Be the best version of yourself</li>
-                    <li>Stay away from the distractions of the elites</li>
-                    <li>Spread awareness about this imminent danger</li>
-                    <li>Avoid EMIs and loans</li>
-                    <li>Understand that the elites' power lies in usury</li>
-                    <li>Discover your true purpose in life</li>
-                    <li>Understand the reality of existence</li>
-                    <li>Remember your beginning as a weak child</li>
-                    <li>
-                      Remember that you will return to weakness and perish
-                    </li>
-                    <li>Accept human weakness</li>
-                    <li>Recognize the dangers of unchecked animal desire</li>
-                    <li>Embrace principles, discipline and morality</li>
-                    <li>
-                      Learn the difference between subjective and objective
-                      morality
-                    </li>
-                    <li>Study objective morality</li>
-                    <li>
-                      Read basic philosophy and understand the Necessary
-                      Existence
-                    </li>
-                    <li>Do comparative religious studies</li>
-                    <li>
-                      Understand the difference between monotheism and
-                      polytheism
-                    </li>
-                    <li>Find the true monotheistic religion</li>
-                    <li>Bind yourself to objective morality</li>
-                    <li>Research Islam</li>
-                    <li>Learn about Imaan which means faith</li>
-                    <li>
-                      Strive for Ihsaan which means excellence in every action
-                    </li>
-                    <li>Raise your family within the framework of Islam</li>
-                    <li>Instill love and fear of God in your heart</li>
-                    <li>
-                      Replace the love of worldly things with the love of God
-                    </li>
-                    <li>Stay firm on the path of Islam</li>
-                    <li>Live in this world like a traveler</li>
-                    <li>Adopt minimalism without extremes</li>
-                    <li>Balance Deen and Duniya</li>
-                    <li>Engage in Dawah which means calling others to truth</li>
-                    <li>Prepare for death:</li>
-                  </ul>
-                </div>
-
-                <div className="bg-muted/30 rounded-lg p-6">
-                  <ol className="space-y-3 list-decimal list-outside">
-                    <li>Stay humble and truthful to avoid enemies</li>
-                    <li>
-                      Launch Dawah projects that continue after you are gone
-                    </li>
-                    <li>Build charity foundations</li>
-                    <li>Construct a mosque</li>
-                    <li>Dig wells</li>
-                    <li>Guide your children to the straight path</li>
-                    <li>Write Islamic books</li>
-                    <li>Teach children</li>
-                    <li>Publish articles</li>
-                    <li>Produce educational content</li>
-                  </ol>
-                </div>
-              </section>
+              <p className="mb-4">
+                Now, we have an understanding of the cracks in the current
+                system, how it came into place, and what its roots are.
+              </p>
             </section>
 
-            <section aria-labelledby="the-concept-of-god">
+            <section>
               <h2
-                id="the-concept-of-god"
+                id="the-rise-of-the-new-world-order"
                 className="text-3xl font-bold mt-12 mb-6"
               >
-                The Concept of God
+                Module 4: The Need for Objective Morality
               </h2>
-              <p className="mb-6">
-                The idea of there being a Creator/Designer/God or Supreme Being
-                is one that has kept many people awake at night. Let's try to
-                figure out the right questions to ask before we draw any
-                conclusions.
+
+              <p className="mb-4">
+                As per the anchors we established earlier, the fundamental thing
+                that is preventing the system from working is the differences in
+                morality, and it has been causing a lot of chaos at multiple
+                stages in <strong>The Line of Existence</strong>.
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-semibold mb-4">Key Questions:</h3>
-                <ul className="space-y-3 list-decimal">
-                  <li>How did the concept of God come into existence?</li>
-                  <li>What do you mean by God?</li>
-                  <li>Do we need God to explain our existence? Why God?</li>
-                  <li>Can there be more than one God?</li>
-                  <li>
-                    Do logic, reasoning, mathematics, and science align with the
-                    concept of God, or are we going for a "God of the gaps"?
-                  </li>
-                  <li>Where is God?</li>
-                  <li>
-                    Doesn't the existence of evil negate the existence of an
-                    all-perfect God?
-                  </li>
-                  <li>What is the purpose of all this?</li>
-                </ul>
-              </div>
+              <p className="mb-4">
+                Looking closely at the anchors: the human innate disposition and
+                the complexity of "The Line of Existence" are hinting towards a
+                designer of the system.
+              </p>
 
-              <aside
-                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
-                role="note"
-              >
-                <p className="font-semibold mb-2">
-                  Tool:{" "}
-                  <Link
-                    href="/spiritual-journey"
-                    className="text-primary hover:underline"
-                  >
-                    Spiritual Journey
-                  </Link>
-                </p>
+              <p className="mb-4">
+                And if we are exploring the best source of morality for entire
+                mankind, then who is better than the Creator of the Universe
+                itself (if He exists)?
+              </p>
 
-                <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                  <ul className="space-y-3 list-decimal">
-                    <li>Design requires a designer.</li>
-                    <li>
-                      All-powerful, all-knowledgeable, ever-existing,
-                      independent, and outside of space-time.
-                    </li>
-                    <li>
-                      Yes, we need God because infinite regression does not lead
-                      to any creation.
-                    </li>
-                    <li>
-                      There is one God. Multiple gods would lead to chaos, but
-                      we see stability.And Logically, there cannot be two
-                      equally powerful entities.
-                    </li>
-                    <li>
-                      Yes, we are not appealing to a "God of the gaps." In fact,
-                      each law and each constant we find in any field of study
-                      implies the existence of a designer behind it.
-                    </li>
-                    <li>
-                      No idea. One thing is certain: since space-time is the
-                      creation of God, He is outside of it, just like a software
-                      developer doesn't live inside the software.
-                    </li>
-                    <li>
-                      To understand the existence of free will to do good and
-                      bad, the concept of good and bad, the concept of day and
-                      night, and many similar signs, we need to understand the
-                      purpose of creation. This requires further study of the
-                      current world and a search for that purpose. And, that is
-                      our next step so strap in we are going for hunting the
-                      best religion.
-                    </li>
-                  </ul>
-                </div>
-              </aside>
+              <p className="mb-4">
+                The advantage we have today to make this link between the
+                current system and philosophical concepts like God or religion
+                is the recorded history of mankind for the last 2 millennia.
+              </p>
+
+              <p className="mb-4">
+                In history, theism and atheism both have had the chance to prove
+                themselves. But we must differentiate between rulers using the{" "}
+                <a href="https://freedomofmind.com/cult-mind-control/bite-model-pdf-download/">
+                  BITE Model
+                </a>{" "}
+                to influence people, using religion as a tool to control people,
+                and rulers who were devout theists.
+              </p>
+
+              <p className="mb-4">
+                Theists justify wars by raising questions about the morality of
+                the enemy, and atheists justify wars to implement their own
+                morality, which is based on their own ideas (Subjective
+                Morality).
+              </p>
+              <p className="mb-4">
+                We are left with 2 options: rely on the principles of any single
+                religion in history, or try to come up with our own system. The
+                second option is what has led to the creation of{" "}
+                <strong>The Loop of Suffering</strong>. So we need to look into
+                history for any example of a ruling system based on objective
+                morality that was not extremely hostile towards communities with
+                different moralities.
+              </p>
             </section>
 
             <section aria-labelledby="religions">
-              <h2 id="religions" className="text-3xl font-bold mt-12 mb-6">
-                The need for Comparative study of Religions
+              <h2 id="religions" className="text-xl font-bold mt-12 mb-6">
+                4.1 The need for Comparative study of Religions
               </h2>
-              <p className="mb-8">
+              <p className="mb-4">
                 Now, we are at a thrilling yet daunting crossroads, forced to
                 examine the systems and religions that dominate the 21st
                 century.{" "}
                 <b>
-                  But, we now have clarity on Human Innate Dispositions, God's
-                  attributed and Oneness of God through objective unbiased
-                  research and logical reasoning.
+                  But we now have clarity on Human Innate Dispositions, God's
+                  attributes, and the Oneness of God through objective, unbiased
+                  research and logical reasoning. (Ref:{" "}
+                  <a href="https://doses-of-imaan.vercel.app/primary/god">
+                    Spiritual Journey
+                  </a>
+                  )
                 </b>
               </p>
 
-              <p className="mb-8">
-                We have one more challenge called "Cognitive Bias". The rigid
-                separation of religion and state adds layers of complexity, and
-                the modern trend of portraying religion as nothing more than
-                "backward thinking" has created a hostile climate. These
-                Cognitive Biases don't just discourage open dialogue, they
-                actively choke the oxygen needed for unbiased, honest research.
+              <p className="mb-4">
+                We have one more challenge called{" "}
+                <strong>Cognitive Bias</strong>. The rigid separation of
+                religion and state adds layers of complexity, and the modern
+                trend of portraying religion as nothing more than "backward
+                thinking" has created a hostile climate. These Cognitive Biases
+                don't just discourage open dialogue, they actively choke the
+                oxygen needed for unbiased, honest research.
               </p>
 
-              <p className="mb-8">
-                Still, we must proceed. First, we will explore religions
-                broadly, then compare them, and finally, take a deep dive into
-                the one that offers the most relevant and sustainable framework
-                for the world of 2025.
+              <p className="mb-4">
+                First, we will explore religions broadly, then compare them, and
+                finally, take a deep dive into the one that offers the most
+                relevant and sustainable framework for the world of 2025.
               </p>
 
-              <p className="mb-8">
+              <p className="mb-4">
                 But even if we discover the "right" religion or philosophy, our
                 work doesn't end there. We will have to scour history for
                 examples of systems that were successfully woven into everyday
-                life, systems that genuinely solved the issues of chaos and are
-                inline with.
+                life—systems that genuinely solved the issues of chaos and are
+                in line with our anchors.
               </p>
-              <p className="mb-8">
-                And this will not be easy, because the current global framework,
+              <p className="mb-4">
+                And this will not be easy because the current global framework,
                 often referred to as the "New World Order," has been masterful
                 at burying or erasing any competing alternative before it has
-                the chance to take root. This is not just research, it's a
+                the chance to take root. This is not just research; it's a
                 battle for truth under layers of suppression.
               </p>
 
               <h2
                 id="historical-context"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-xl font-bold mt-12 mb-6"
               >
-                Historical Context
+                4.2 History of Religions
               </h2>
               <p className="mb-6">
                 After looking into human history, we find that our recorded data
@@ -1529,14 +1448,11 @@ export default function JourneyPage() {
                 From 3500 BC to 2025 AD, a wide variety of religions emerged:
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <h3 className="text-xl font-semibold mb-4">
-                  Categories of Religion
-                </h3>
+              <div className="bg-muted/30 rounded-lg mb-8">
                 <ul className="space-y-4 list-decimal">
                   <li>
                     <strong>Prehistoric Religions</strong>
-                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                    <ul className="mt-2 space-y-1 list-decimal">
                       <li>Ancient Egyptian Polytheism</li>
                       <li>Ancient Mesopotamian Polytheism</li>
                       <li>Indo-European Polytheism</li>
@@ -1548,14 +1464,14 @@ export default function JourneyPage() {
                   </li>
                   <li>
                     <strong>Vedic Religion</strong>
-                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                    <ul className="mt-2 space-y-1 list-decimal">
                       <li>Brahminism → Hinduism</li>
                       <li>Shramana Movements → Buddhism, Jainism</li>
                     </ul>
                   </li>
                   <li>
                     <strong>Abrahamic Religions</strong>
-                    <ul className="ml-6 mt-2 space-y-1 list-decimal">
+                    <ul className="mt-2 space-y-1 list-decimal">
                       <li>Judaism</li>
                       <li>Christianity</li>
                       <li>Islam</li>
@@ -1563,35 +1479,25 @@ export default function JourneyPage() {
                   </li>
                 </ul>
               </div>
-
-              <p className="mb-8">
-                Filtering out the religions is much easier now as we have
-                clarity through logical reasoning on Definition of God,Oneness
-                of God and clear Understanding of Human Innate disposition and
-                the Line of Existence. The religions which has monthiestic
-                principles are Abrahamic religions: Judaism, Christianity and
-                Islam. Let's compare with more parameters and find out the true
-                religion.
-              </p>
             </section>
 
             <section aria-labelledby="comparison-parameters">
               <h2
                 id="comparison-parameters"
-                className="text-3xl font-bold mt-12 mb-6"
+                className="text-xl font-bold mt-12 mb-6"
               >
-                Comparison Parameters
+                4.3 Comparison Parameters
               </h2>
               <p className="mb-6">
                 To navigate this complexity, we must establish clear, unbiased
                 comparison parameters:
               </p>
 
-              <div className="bg-muted/30 rounded-lg p-6 mb-8">
-                <ol className="space-y-3">
+              <div className="bg-muted/30 rounded-lg mb-8">
+                <ul className="space-y-3">
                   <li>
                     <strong>Belief in God</strong>
-                    <ul className="ml-6 mt-1 space-y-1">
+                    <ul className="mt-1 space-y-1">
                       <li>Count (number of deities)</li>
                       <li>
                         Disparity between the actual definition of God and the
@@ -1646,8 +1552,104 @@ export default function JourneyPage() {
                       <li>Conversion rate</li>
                     </ul>
                   </li>
-                </ol>
+                </ul>
               </div>
+
+              <p className="mb-8">
+                Filtering out the religions is much easier now, as we have
+                clarity through logical reasoning on the Definition of God,
+                Oneness of God, and clear understanding of Human Innate
+                Disposition and the Line of Existence. The religions which have
+                monotheistic principles are the Abrahamic religions: Judaism,
+                Christianity, and Islam. Let's compare with more parameters and
+                find out the true religion.
+              </p>
+            </section>
+
+            <section aria-labelledby="the-concept-of-god">
+              <h2
+                id="the-concept-of-god"
+                className="text-2xl font-bold mt-12 mb-6"
+              >
+                4.3 The Concept of God
+              </h2>
+              <p className="mb-6">
+                The idea of there being a Creator/Designer/God or Supreme Being
+                is not a new one. Let's frame some basic questions from a
+                layman's perspective.
+              </p>
+
+              <div className="bg-muted/30 rounded-lg mb-8">
+                <ul className="space-y-2 list-decimal">
+                  <li>What do you mean by God?</li>
+                  <li>How did the concept of God come into existence?</li>
+                  <li>Do we need God to explain our existence? Why God?</li>
+                  <li>Can there be more than one God?</li>
+                  <li>
+                    Do logic, reasoning, mathematics, and science align with the
+                    concept of God, or are we going for a "God of the gaps"?
+                  </li>
+                  <li>Where is God?</li>
+                  <li>
+                    Doesn't the existence of evil negate the existence of an
+                    all-perfect God?
+                  </li>
+                  <li>What is the purpose of all this?</li>
+                </ul>
+              </div>
+
+              <aside
+                className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
+                role="note"
+              >
+                <p className="font-semibold mb-2">
+                  Tool:{" "}
+                  <Link
+                    href="/spiritual-journey"
+                    className="text-primary hover:underline"
+                  >
+                    Spiritual Journey
+                  </Link>
+                </p>
+
+                <div className="bg-muted/30 rounded-lg mb-8">
+                  <ul className="space-y-2 mt-4 list-decimal">
+                    <li>
+                      All-powerful, all-knowledgeable, ever-existing,
+                      independent, and outside of space-time.
+                    </li>
+                    <li>Design requires a designer.</li>
+                    <li>
+                      Yes, we need God because infinite regression does not lead
+                      to any creation.
+                    </li>
+                    <li>
+                      There is one God. Multiple gods would lead to chaos, but
+                      we see stability. And logically, there cannot be two
+                      equally powerful entities.
+                    </li>
+                    <li>
+                      Yes, we are not appealing to a "God of the gaps." In fact,
+                      each law and each constant we find in any field of study
+                      implies the existence of a designer behind it.
+                    </li>
+                    <li>
+                      No idea. One thing is certain: since space-time is the
+                      creation of God, He is outside of it, just like a software
+                      developer doesn't live inside the software.
+                    </li>
+                    <li>
+                      To understand the existence of free will to do good and
+                      bad, the concept of good and bad, the concept of day and
+                      night, and many similar signs, we need to understand the
+                      purpose of creation. This requires further study of the
+                      current world and a search for that purpose. And, that is
+                      our next step so strap in we are going for hunting the
+                      best religion.
+                    </li>
+                  </ul>
+                </div>
+              </aside>
             </section>
 
             <aside
@@ -1665,19 +1667,11 @@ export default function JourneyPage() {
               </p>
               <p>
                 <strong>Conclusion:</strong> After an in-depth study using the
-                above parameters, we conclude that the only religion which fully
-                answers all the questions raised earlier in the "New Community"
-                scenario, and which fulfills the criteria for the attributes of
-                God without ambiguity, is Islam.
+                above parameters, it is crystal clear which religion fulfills
+                all the criteria, is in line with the definition of God, and is
+                compliant with <strong>The Anchors of Reality</strong>.
               </p>
             </aside>
-
-            <p className="mb-8">
-              We have found the religion which fulfills the criteria perfectly.
-              But the real question remains: How can it solve today's problems,
-              and how can it possibly be implemented in the complex reality of
-              2025?
-            </p>
 
             <section aria-labelledby="conclusion">
               <h2 id="conclusion" className="text-3xl font-bold mt-12 mb-6">
@@ -1708,33 +1702,21 @@ export default function JourneyPage() {
               </p>
 
               <p className="mb-8">
-                Now, you have the mental clarity on the current affairs, the
-                conflicting ideologies and no more confusion regarding what is
-                right and what is wrong. This clarity is very much needed in
-                these tough times.
+                By Now, all the <strong>Cognitive Dissonance</strong> within
+                must have been dissolved. In some time, Your mind will finally
+                be at peace, but this journey has more observation of the world
+                then the self-introspection you need.
               </p>
 
-              <p className="mb-8">
-                Thank you for joining me on this journey. I hope you have found
-                the mental peace you were looking for.
+              <p className="text-center max-w-[200px] m-auto text-sm mb-8">
+                For self-introspection please embark on this <br />
+                <strong>
+                  <a href="https://doses-of-imaan.vercel.app" target="_blank">
+                    {" "}
+                    Spiritual Journey
+                  </a>
+                </strong>
               </p>
-            </section>
-
-            <section aria-labelledby="personal-commitment">
-              <h2
-                id="personal-commitment"
-                className="text-3xl font-bold mt-12 mb-6"
-              >
-                Personal Commitment
-              </h2>
-              <p className="mb-8">
-                Before we continue, I want to pause for a moment and acknowledge
-                your commitment to walking this path with me. This journey is
-                not just about collecting facts; it's about understanding the
-                realities of the World and find your purpose in the process.
-              </p>
-
-              <p className="mb-4"></p>
             </section>
           </div>
         </div>
@@ -1742,3 +1724,89 @@ export default function JourneyPage() {
     </main>
   );
 }
+
+// <section aria-labelledby="what-must-be-done">
+// <h3
+//   id="what-must-be-done"
+//   className="text-2xl font-bold mt-12 mb-6"
+// >
+//   What Must Be Done
+// </h3>
+
+// <p className="mb-8">
+//   Challenging the elites of this New World Order may not be
+//   within our power. But we must be aware of the dangers ahead
+//   and refuse to fuel their fire.
+// </p>
+
+// <p>So, what should we do?</p>
+
+// <div className="bg-muted/30 rounded-lg p-6">
+//   <ul className="space-y-3 list-decimal list-outside">
+//     <li>Work on yourself</li>
+//     <li>Be the best version of yourself</li>
+//     <li>Stay away from the distractions of the elites</li>
+//     <li>Spread awareness about this imminent danger</li>
+//     <li>Avoid EMIs and loans</li>
+//     <li>Understand that the elites' power lies in usury</li>
+//     <li>Discover your true purpose in life</li>
+//     <li>Understand the reality of existence</li>
+//     <li>Remember your beginning as a weak child</li>
+//     <li>
+//       Remember that you will return to weakness and perish
+//     </li>
+//     <li>Accept human weakness</li>
+//     <li>Recognize the dangers of unchecked animal desire</li>
+//     <li>Embrace principles, discipline and morality</li>
+//     <li>
+//       Learn the difference between subjective and objective
+//       morality
+//     </li>
+//     <li>Study objective morality</li>
+//     <li>
+//       Read basic philosophy and understand the Necessary
+//       Existence
+//     </li>
+//     <li>Do comparative religious studies</li>
+//     <li>
+//       Understand the difference between monotheism and
+//       polytheism
+//     </li>
+//     <li>Find the true monotheistic religion</li>
+//     <li>Bind yourself to objective morality</li>
+//     <li>Research Islam</li>
+//     <li>Learn about Imaan which means faith</li>
+//     <li>
+//       Strive for Ihsaan which means excellence in every action
+//     </li>
+//     <li>Raise your family within the framework of Islam</li>
+//     <li>Instill love and fear of God in your heart</li>
+//     <li>
+//       Replace the love of worldly things with the love of God
+//     </li>
+//     <li>Stay firm on the path of Islam</li>
+//     <li>Live in this world like a traveler</li>
+//     <li>Adopt minimalism without extremes</li>
+//     <li>Balance Deen and Duniya</li>
+//     <li>Engage in Dawah which means calling others to truth</li>
+//     <li>Prepare for death</li>
+//   </ul>
+// </div>
+
+// <div className="bg-muted/30 rounded-lg p-6">
+//   <ol className="space-y-3 list-decimal list-outside">
+//     <li>Stay humble and truthful to avoid enemies</li>
+//     <li>
+//       Launch Dawah projects that continue after you are gone
+//     </li>
+//     <li>Build charity foundations</li>
+//     <li>Construct a mosque</li>
+//     <li>Dig wells</li>
+//     <li>Guide your children to the straight path</li>
+//     <li>Write Islamic books</li>
+//     <li>Teach children</li>
+//     <li>Publish articles</li>
+//     <li>Produce educational content</li>
+//   </ol>
+// </div>
+// </section>

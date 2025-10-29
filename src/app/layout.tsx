@@ -52,9 +52,8 @@ export default function RootLayout({
           <SidebarProvider defaultOpen={true}>
             <SidebarComponent />
             <main className="flex flex-col w-full">
-              <div className="fixed bottom-3 right-3 z-50 bg-black rounded-full p-4 shadow-md border sm:hidden">
-                <SidebarTrigger className="aspect-square text-white" />
-              </div>
+              <SidebarTrigger className="text-white fixed bottom-3 right-3 z-50 bg-black rounded-full p-6 shadow-md border sm:hidden" />
+
               <div className="z-10">{children}</div>
               {/* <div
                 id="google_translate_element"
