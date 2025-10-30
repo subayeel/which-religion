@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Target } from "lucide-react";
 
 export default function JourneyPage() {
   return (
@@ -10,7 +10,7 @@ export default function JourneyPage() {
         <div className="container mx-auto px-4 py-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Journey
+              Journey of Observation
             </h1>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <span>Philosophy & Religion</span>
@@ -104,7 +104,70 @@ export default function JourneyPage() {
                 </div>
               </div>
             </section>
+            {/* Objective Section */}
+            <section
+              className="bg-teal-50 dark:bg-primary/20 border border-teal-200 dark:border-teal-800 rounded-lg p-6 mb-8"
+              aria-labelledby="objectives"
+            >
+              <h3 className="text-primary text-lg flex gap-1 items-center font-bold mb-4">
+                <span>
+                  <Target className="text-teal-600" size={16} />
+                </span>
+                Objective of this Journey
+              </h3>
 
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-white dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-teal-600 dark:text-teal-400 text-sm font-semibold">
+                      1
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-teal-800 dark:text-teal-200">
+                      Understanding the strong anchors which keeps us tied to
+                      the reality
+                    </h4>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">
+                      Our Birth, Our Death, Our Dispositions, Our Existence and
+                      reality of Time
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-white dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-teal-600 dark:text-teal-400 text-sm font-semibold">
+                      2
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-teal-800 dark:text-teal-200">
+                      Understanding current world;y affairs with anchors in mind
+                    </h4>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">
+                      The current State of Affairs, rising of "New World Order"
+                      and its roots
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 bg-white dark:bg-teal-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-teal-600 dark:text-teal-400 text-sm font-semibold">
+                      3
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-teal-800 dark:text-teal-200">
+                      The Need for Objective Morality
+                    </h4>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">
+                      Searching for a system to end the{" "}
+                      <strong>The Loop of Suffering</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
             {/* Anchor */}
             <section>
               <h1 className="text-3xl font-bold mt-12 mb-6">
@@ -128,12 +191,12 @@ export default function JourneyPage() {
                   like everything in this world had a beginning.
                 </li>
                 <li>
-                  <strong>Death:</strong> You will be forgotten in 100 years
-                  from now.
+                  <strong>Death:</strong> You have limited time here and death
+                  cannot be avoided.
                 </li>
                 <li>
-                  <strong>Human Innate Disposition:</strong> These dispositions
-                  are present in every human beings.
+                  <strong>Human Innate Disposition:</strong> Certain
+                  dispositions are present in every human beings like
                 </li>
                 <li>
                   <strong>Existence:</strong> You exist in this world, others
@@ -491,7 +554,6 @@ export default function JourneyPage() {
                 </div>
               </div>
             </section>
-
             {/* Existence */}
             <section aria-labelledby="the-line-of-existence">
               <h2
@@ -686,7 +748,6 @@ export default function JourneyPage() {
                 which gives answer to 'The central questions' we asked earlier.
               </p>
             </section>
-
             {/* Time */}
             <section aria-labelledby="time">
               <h2
@@ -776,7 +837,6 @@ export default function JourneyPage() {
                 </ul>
               </p>
             </section>
-
             {/* Linking the Anchors with Observation */}
             <aside
               className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
@@ -790,7 +850,7 @@ export default function JourneyPage() {
                 anchors we discussed. How it forms the basis of your existence.
               </p>
             </aside>
-            {/* Module 1: Conculsion */}
+            {/* Module 1: Conclusion */}
             <section>
               <h2 className="text-xl font-bold mt-12 mb-6">1.4 Conclusion</h2>
               <p className="mb-4">
@@ -860,8 +920,8 @@ export default function JourneyPage() {
                 starting with the observation of the current state of the world.
               </p>
             </section>
-
             <p className="text-center text-3xl">. . . </p>
+            {/* Module 2: Observation Begins */}
             <section>
               <h2 className="text-3xl font-bold mt-12 mb-6">
                 Module 2: Observation Begins
@@ -884,7 +944,6 @@ export default function JourneyPage() {
                 </ul>
               </p>
             </section>
-
             <section aria-labelledby="the-current-state-of-affairs">
               <h2
                 id="the-current-state-of-affairs"
@@ -966,7 +1025,6 @@ export default function JourneyPage() {
                 centuries.
               </p>
             </section>
-
             <section aria-labelledby="the-rise-of-the-new-world-order">
               <h2
                 id="the-rise-of-the-new-world-order"
@@ -1079,7 +1137,6 @@ export default function JourneyPage() {
                 head-on if it is to take root in our era.
               </p>
             </section>
-
             <aside
               className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
               role="note"
@@ -1106,7 +1163,6 @@ export default function JourneyPage() {
                 personal to the international.
               </p>
             </aside>
-
             <section aria-labelledby="current-state-of-affairs">
               <h2
                 id="the-rise-of-the-new-world-order"
@@ -1318,13 +1374,13 @@ export default function JourneyPage() {
                 system, how it came into place, and what its roots are.
               </p>
             </section>
-
+            {/* Module 3:The Need for Objective Morality */}
             <section>
               <h2
                 id="the-rise-of-the-new-world-order"
                 className="text-3xl font-bold mt-12 mb-6"
               >
-                Module 4: The Need for Objective Morality
+                Module 3: The Need for Objective Morality
               </h2>
 
               <p className="mb-4">
@@ -1378,10 +1434,9 @@ export default function JourneyPage() {
                 different moralities.
               </p>
             </section>
-
             <section aria-labelledby="religions">
               <h2 id="religions" className="text-xl font-bold mt-12 mb-6">
-                4.1 The need for Comparative study of Religions
+                3.1 The need for Comparative study of Religions
               </h2>
               <p className="mb-4">
                 Now, we are at a thrilling yet daunting crossroads, forced to
@@ -1433,7 +1488,7 @@ export default function JourneyPage() {
                 id="historical-context"
                 className="text-xl font-bold mt-12 mb-6"
               >
-                4.2 History of Religions
+                3.2 History of Religions
               </h2>
               <p className="mb-6">
                 After looking into human history, we find that our recorded data
@@ -1480,13 +1535,12 @@ export default function JourneyPage() {
                 </ul>
               </div>
             </section>
-
             <section aria-labelledby="comparison-parameters">
               <h2
                 id="comparison-parameters"
                 className="text-xl font-bold mt-12 mb-6"
               >
-                4.3 Comparison Parameters
+                3.3 Comparison Parameters
               </h2>
               <p className="mb-6">
                 To navigate this complexity, we must establish clear, unbiased
@@ -1565,13 +1619,12 @@ export default function JourneyPage() {
                 find out the true religion.
               </p>
             </section>
-
             <section aria-labelledby="the-concept-of-god">
               <h2
                 id="the-concept-of-god"
                 className="text-2xl font-bold mt-12 mb-6"
               >
-                4.3 The Concept of God
+                3.4 The Concept of God
               </h2>
               <p className="mb-6">
                 The idea of there being a Creator/Designer/God or Supreme Being
@@ -1651,7 +1704,6 @@ export default function JourneyPage() {
                 </div>
               </aside>
             </section>
-
             <aside
               className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-lg"
               role="note"
@@ -1672,7 +1724,6 @@ export default function JourneyPage() {
                 compliant with <strong>The Anchors of Reality</strong>.
               </p>
             </aside>
-
             <section aria-labelledby="conclusion">
               <h2 id="conclusion" className="text-3xl font-bold mt-12 mb-6">
                 Conclusion
